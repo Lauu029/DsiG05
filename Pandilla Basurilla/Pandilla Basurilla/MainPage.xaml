@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="Pandilla_Basurilla.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Pandilla_Basurilla"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Orientation="Vertical"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Margin="20">
+            <Button Content="Misiones"
+                    Margin=" 10"
+                    Name="Misiones"
+                    HorizontalAlignment="Stretch"
+                    Click="Misiones_Click"/>
+            <Button Content="Ajustes"
+                    Margin="10"
+                    HorizontalAlignment="Stretch"
+                    Name="Ajustes"/>
+            <Button Content="Modos de juego"
+                    Margin="10"
+                    HorizontalAlignment="Stretch"
+                    Name="ModosdeJuego"/>
+            <Button Content="Partida"
+                    Margin="10"
+                    HorizontalAlignment="Stretch"
+                    Name="Partida"/>
+            <Button Content="Preparacion Partida"
+                    HorizontalAlignment="Stretch"
+                    Margin="10"
+                    Name="PreparacionPartida"
+                    Click="PreparacionPartida_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
