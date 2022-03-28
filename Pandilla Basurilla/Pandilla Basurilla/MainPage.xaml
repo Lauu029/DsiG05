@@ -15,44 +15,63 @@
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock HorizontalAlignment="Center"
-                       VerticalAlignment="Center"
-                       Text="Pandilla Basurilla"
-                       FontSize="40"/>
+            <TextBlock x:Name="Text_Dinero"
+                       Text="$ 20"
+                       Margin="10"/>
+
+            <Button Grid.Row="2"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Margin="20"
+                    Content="Ajustes"
+                    Height="60"
+                    Width="60"/>
+
+            <StackPanel Orientation="Vertical"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                
+                <TextBlock HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Text="Pandilla"
+                           FontSize="60"/>
+                
+                <TextBlock HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Text="Basurilla"
+                           FontSize="80"/>
+                
+            </StackPanel>
 
             <StackPanel Orientation="Vertical"
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         Margin="20"
-                        Grid.Row="2">
+                        Grid.Row="2"
+                        Width="300"
+                        >
 
+                <Button Content="Jugar"
+                        Margin="10"
+                        HorizontalAlignment="Stretch"
+                        Name="Jugar"/>
+                
                 <Button Content="Misiones"
                         Margin=" 10"
                         Name="Misiones"
                         HorizontalAlignment="Stretch"
                         Click="Misiones_Click"/>
-                
-                <Button Content="Ajustes"
-                        Margin="10"
-                        HorizontalAlignment="Stretch"
-                        Name="Ajustes"/>
-                
-                <Button Content="Modos de juego"
-                        Margin="10"
-                        HorizontalAlignment="Stretch"
-                        Name="ModosdeJuego"/>
-                
-                <Button Content="Partida"
-                        Margin="10"
-                        HorizontalAlignment="Stretch"
-                        Name="Partida"/>
-                
-                <Button Content="Preparacion Partida"
+
+                <Button Content="Tienda"
                         HorizontalAlignment="Stretch"
                         Margin="10"
-                        Name="PreparacionPartida"
-                        Click="PreparacionPartida_Click"/>
-                
+                        Name="TiendaButton"/>
+
+                <Button Content="Salir"
+                        Margin="10,20,10,20"
+                        HorizontalAlignment="Stretch"
+                        Name="Salida"/>
+
             </StackPanel>
         </Grid>
         
