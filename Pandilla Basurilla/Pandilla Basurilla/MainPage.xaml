@@ -9,32 +9,53 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel Orientation="Vertical"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Margin="20">
-            <Button Content="Misiones"
-                    Margin=" 10"
-                    Name="Misiones"
-                    HorizontalAlignment="Stretch"
-                    Click="Misiones_Click"/>
-            <Button Content="Ajustes"
-                    Margin="10"
-                    HorizontalAlignment="Stretch"
-                    Name="Ajustes"/>
-            <Button Content="Modos de juego"
-                    Margin="10"
-                    HorizontalAlignment="Stretch"
-                    Name="ModosdeJuego"/>
-            <Button Content="Partida"
-                    Margin="10"
-                    HorizontalAlignment="Stretch"
-                    Name="Partida"/>
-            <Button Content="Preparacion Partida"
-                    HorizontalAlignment="Stretch"
-                    Margin="10"
-                    Name="PreparacionPartida"
-                    Click="PreparacionPartida_Click"/>
-        </StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="Pandilla Basurilla"
+                       FontSize="40"/>
+
+            <StackPanel Orientation="Vertical"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Margin="20"
+                        Grid.Row="2">
+
+                <Button Content="Misiones"
+                        Margin=" 10"
+                        Name="Misiones"
+                        HorizontalAlignment="Stretch"
+                        Click="Misiones_Click"/>
+                
+                <Button Content="Ajustes"
+                        Margin="10"
+                        HorizontalAlignment="Stretch"
+                        Name="Ajustes"/>
+                
+                <Button Content="Modos de juego"
+                        Margin="10"
+                        HorizontalAlignment="Stretch"
+                        Name="ModosdeJuego"/>
+                
+                <Button Content="Partida"
+                        Margin="10"
+                        HorizontalAlignment="Stretch"
+                        Name="Partida"/>
+                
+                <Button Content="Preparacion Partida"
+                        HorizontalAlignment="Stretch"
+                        Margin="10"
+                        Name="PreparacionPartida"
+                        Click="PreparacionPartida_Click"/>
+                
+            </StackPanel>
+        </Grid>
+        
+
     </Grid>
 </Page>
