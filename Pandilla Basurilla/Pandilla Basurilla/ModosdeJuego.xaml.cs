@@ -26,5 +26,21 @@ namespace Pandilla_Basurilla
         {
             this.InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            TryGoBack();
+        }
+
+        public static bool TryGoBack()
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+            if (rootFrame.CanGoBack)
+            {
+                rootFrame.GoBack();
+                return true;
+            }
+            return false;
+        }
     }
 }

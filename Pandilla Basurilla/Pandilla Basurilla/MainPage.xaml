@@ -69,6 +69,10 @@
 
                 <Button Content="Tienda"
                         HorizontalAlignment="Stretch"
+                        Name="ModosdeJuego"
+                        Click="ModosDeJuego_Click"/>
+                
+                <Button Content="Partida"
                         Margin="10"
                         Name="TiendaButton"
                         Click="TiendaButton_Click"/>

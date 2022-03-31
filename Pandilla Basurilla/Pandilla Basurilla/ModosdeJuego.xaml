@@ -8,7 +8,75 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Page.Resources>
+        <Style x:Key="ExitStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FFB0130F" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="30"/>
+        </Style>
+        <Style x:Key="GamemodeStyle" TargetType="Button">
+            <Setter Property="Width" Value="400"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="Background" Value="#4c9d23"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontStretch" Value="Condensed"/>
 
+        </Style>
+    </Page.Resources>
+    
+    <Grid Background="#FFAEDD94">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="2"
+                x:Name="BackButton"
+                Style="{StaticResource ExitStyle}"
+                Content="Volver"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                Width="125"
+                Margin="0,0,0,40"
+                IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
+                ToolTipService.ToolTip="Back"
+                Click="BackButton_Click"/>
+        
+        <TextBlock Grid.Column="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Text="Modos de juego"
+                Margin="30"
+                FontSize="75" CharacterSpacing="20" FontWeight="Bold" Foreground="#1e5900"/>
+
+        <StackPanel Grid.Column="1"
+                Orientation="Vertical"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="20"
+                Grid.Row="1">
+
+            <Button Content="PRACTICA"
+                        Margin="10"
+                        Style="{StaticResource GamemodeStyle}"
+                        HorizontalAlignment="Stretch" CharacterSpacing="-1"/>
+
+            <Button Content="ONLINE"
+                        Margin="40"
+                        Style="{StaticResource GamemodeStyle}"
+                        HorizontalAlignment="Stretch"/>
+
+            <Button Content="JUGAR CON AMIGOS"
+                        Margin="10"
+                        Style="{StaticResource GamemodeStyle}"
+                        HorizontalAlignment="Stretch"/>
+        </StackPanel>
     </Grid>
 </Page>
