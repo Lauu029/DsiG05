@@ -36,5 +36,10 @@ namespace Pandilla_Basurilla
         {
             Frame.Navigate(typeof(PreparacionPartida));
         }
+
+        private void ModosDeJuego_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ModosdeJuego));
+        }
     }
 }

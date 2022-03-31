@@ -40,7 +40,8 @@
                 <Button Content="Modos de juego"
                         Margin="10"
                         HorizontalAlignment="Stretch"
-                        Name="ModosdeJuego"/>
+                        Name="ModosdeJuego"
+                        Click="ModosDeJuego_Click"/>
                 
                 <Button Content="Partida"
                         Margin="10"
