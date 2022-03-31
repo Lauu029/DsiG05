@@ -9,6 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Resources>
+        <Style x:Key="TittleStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#275211"/>
+            <Setter Property="FontWeight" Value="ExtraBold"/>
+            <Setter Property="FontStretch" Value="ExtraExpanded"/>
+        </Style>
+            
         <Style x:Key="ButtonsStyle" TargetType="Button">
             <Setter Property="Width" Value="400"/>
             <Setter Property="Height" Value="80"/>
@@ -42,7 +48,10 @@
 
             <TextBlock x:Name="Text_Dinero"
                        Text="$ 20"
-                       Margin="10"/>
+                       Margin="20"
+                       FontSize="50"
+                       FontWeight="SemiBold"
+                       Foreground="White"/>
 
             <Button Grid.Row="2"
                     HorizontalAlignment="Right"
@@ -50,7 +59,9 @@
                     Margin="20"
                     Content="Ajustes"
                     Height="60"
-                    Width="60"/>
+                    Width="60"
+                    Background="#4c9d23"
+                    Foreground="White"/>
 
             <StackPanel Orientation="Vertical"
                         HorizontalAlignment="Center"
@@ -59,12 +70,14 @@
                 <TextBlock HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            Text="Pandilla"
-                           FontSize="60"/>
+                           FontSize="100"
+                           Style="{StaticResource TittleStyle}"/>
                 
                 <TextBlock HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            Text="Basurilla"
-                           FontSize="80"/>
+                           FontSize="130"
+                           Style="{StaticResource TittleStyle}"/>
                 
             </StackPanel>
 
