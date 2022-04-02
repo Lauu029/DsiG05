@@ -39,10 +39,50 @@
     <Grid Background="#FFAEDD94">
         
         <Button x:Name="BackButton"
-                Style="{StaticResource BackButtonStyle }"
-                IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
+                Style="{StaticResource BackButtonStyle }" 
                 Content="Volver"
                 HorizontalAlignment="Left"
-                VerticalAlignment="Bottom"/>
+                VerticalAlignment="Bottom"
+                Click="BackButton_Click"/>
+
+        <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+            <TextBlock Text="AJUSTES"
+                       HorizontalAlignment="Center"
+                       FontSize="75"
+                       Margin="30"
+                       Style="{StaticResource TittleStyle}"/>
+
+            <Button Content="MI CUENTA"
+                    HorizontalAlignment="Stretch"
+                    Name="MiCuentaButton"
+                    Click="MiCuentaButton_Click"
+                    Style="{StaticResource ButtonsStyle}"/>
+
+            <Button Content="ESTADISTICAS"
+                    Name="EstadisticasButton"
+                    HorizontalAlignment="Stretch"
+                    Click="EstadisticasButton_Click"
+                    Style="{StaticResource ButtonsStyle}"/>
+
+            <Button Content="IDIOMA"
+                    HorizontalAlignment="Stretch"
+                    Name="IdiomaButton"
+                    Click="IdiomaButton_Click"
+                    Style="{StaticResource ButtonsStyle}"/>
+
+            
+            
+            <StackPanel>
+                <Slider/>
+            </StackPanel>
+
+            <StackPanel>
+                <Slider/>
+            </StackPanel>
+
+        </StackPanel>
     </Grid>
 </Page>

@@ -40,5 +40,25 @@ namespace Pandilla_Basurilla
 
             return false;
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            TryGoBack();
+        }
+
+        private void MiCuentaButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void EstadisticasButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void IdiomaButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
