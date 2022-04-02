@@ -52,5 +52,10 @@ namespace Pandilla_Basurilla
         {
             Frame.Navigate(typeof(ModosdeJuego));
         }
+
+        private void ButtonAjustes_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Ajustes));
+        }
     }
 }

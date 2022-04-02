@@ -26,6 +26,19 @@ namespace Pandilla_Basurilla
         {
             this.InitializeComponent();
         }
-        //cambio de prueba 1 a ve3r
+
+        public static bool TryGoBack()
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+
+            if (rootFrame.CanGoBack)
+            {
+                rootFrame.GoBack();
+
+                return true;
+            }
+
+            return false;
+        }
     }
 }

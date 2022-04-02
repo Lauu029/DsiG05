@@ -61,7 +61,8 @@
                     Height="60"
                     Width="60"
                     Background="#4c9d23"
-                    Foreground="White"/>
+                    Foreground="White"
+                    Click="ButtonAjustes_Click"/>
 
             <StackPanel Orientation="Vertical"
                         HorizontalAlignment="Center"
