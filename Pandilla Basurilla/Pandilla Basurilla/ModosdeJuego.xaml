@@ -56,6 +56,13 @@
                 Margin="30"
                 FontSize="75" CharacterSpacing="20" FontWeight="Bold" Foreground="#1e5900"/>
 
+        <TextBlock x:Name="Text_Dinero"
+                       Text="$ 20"
+                       Margin="30"
+                       FontSize="50"
+                       FontWeight="SemiBold"
+                       Foreground="White"/>
+
         <StackPanel Grid.Column="1"
                 Orientation="Vertical"
                 HorizontalAlignment="Center"
