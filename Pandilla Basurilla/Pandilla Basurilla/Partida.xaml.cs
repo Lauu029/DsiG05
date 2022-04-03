@@ -26,5 +26,10 @@ namespace Pandilla_Basurilla
         {
             this.InitializeComponent();
         }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
     }
 }

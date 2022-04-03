@@ -8,6 +8,27 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style x:Key="ExitStyle" TargetType="Button">
+            <Setter Property="Background" Value="#d4403c" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="30"/>
+        </Style>
+        <Style x:Key="Button1" TargetType="Button">
+            <Setter Property="Background" Value="#d6d6d6" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="30"/>
+        </Style>
+        <Style x:Key="Button2" TargetType="Button">
+            <Setter Property="Background" Value="#d6d6d6" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+    </Page.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -24,7 +45,7 @@
         <Rectangle Grid.Row="1"
                    Fill="#a8c6fa"/>
         <Rectangle Grid.Row="2"
-                   Fill="#a8c6fa"/>
+                   Fill="White"/>
 
         <Rectangle Grid.Column="2"
             Fill="#ffb4b0"/>
@@ -35,52 +56,158 @@
             Grid.Row="2"
                    Fill="#ffb4b0"/>
 
-        <Rectangle Fill="#3d8af7"
+        <StackPanel Orientation="Horizontal"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="0">
+
+            <Rectangle Fill="#3d8af7"
                    Width="350"
                    Height="50"
                    HorizontalAlignment="Left"
-                   Margin="50,0,0,0"/>
-        <Rectangle Fill="White"
+                   Margin="0,0,0,0"/>
+            <Rectangle Fill="White"
                    Width="150"
                    Height="50"
                    HorizontalAlignment="Right"
-                   Margin="0,0,140,0"/>
+                   Margin="0,0,0,0"/>
+            
+            <TextBlock Text="$ 20"
+                   Margin="10"
+                   FontSize="50"
+                   FontWeight="SemiBold"
+                   HorizontalAlignment="Right"
+                   Foreground="Black"/>
+        </StackPanel>
+
         <TextBlock Text="VIDA JUGADOR 1"
-                   Margin="70,42,0,0"
+                   Margin="75,0,0,0"
                    FontSize="30"
                    FontWeight="SemiBold"
                    CharacterSpacing="100"
                    HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
                    Foreground="Black"/>
 
-        <Rectangle Grid.Column="2" 
-                   Fill="#ff5d55"
+        <StackPanel Grid.Column="2"
+                Orientation="Horizontal"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Margin="0">
+
+            <Rectangle Fill="#ff5d55"
                    Width="150"
                    Height="50"
                    HorizontalAlignment="Left"
                    Margin="140,0,0,0"/>
-        <Rectangle Grid.Column="2" 
-                   Fill="White"
+            <Rectangle Fill="White"
                    Width="350"
                    Height="50"
                    HorizontalAlignment="Right"
                    Margin="0,0,50,0"/>
+        </StackPanel>
+        
         <TextBlock Grid.Column="2" 
                    Text="VIDA JUGADOR 2"
-                   Margin="0,42,70,0"
+                   Margin="0,0,75,0"
                    FontSize="30"
                    FontWeight="SemiBold"
                    CharacterSpacing="100"
                    HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
                    Foreground="Black"/>
 
-        <TextBlock x:Name="Text_Dinero"
-                       Text="$ 20"
-                       Margin="0,26,25,0"
-                       FontSize="50"
-                       FontWeight="SemiBold"
-                       HorizontalAlignment="Right"
-                       Foreground="Black"/>
+        
+
+        <TextBlock Grid.Column="1"
+                   Text="RONDA"
+                   Margin="0,20,0,0"
+                   FontSize="25"
+                   FontWeight="SemiBold"
+                   HorizontalAlignment="Center"
+                   Foreground="Black"/>
+        <TextBlock Grid.Column="1"
+                   Text="3"
+                   Margin="0,0,0,5"
+                   FontSize="50"
+                   FontWeight="SemiBold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Foreground="Black"/>
+
+        <Button Grid.Row="2"
+                Grid.Column="2"
+                x:Name="ExitButton"
+                Style="{StaticResource ExitStyle}"
+                Content="Salir"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Width="125"
+                Height="75"
+                Margin="0,0,50,0"
+                Click="ExitButton_Click"/>
+
+        <StackPanel Grid.Row="2"
+                Orientation="Horizontal"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Margin="0">
+            <StackPanel Grid.Row="2"
+                Orientation="Horizontal"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Margin="0">
+
+                <Button 
+                Style="{StaticResource Button1}"
+                Content="ATAQUE"
+                HorizontalAlignment="Stretch"
+                Width="150"
+                Height="75"
+                Margin="20"/>
+
+                <Button 
+                Style="{StaticResource Button1}"
+                Content="DEFENSA"
+                HorizontalAlignment="Stretch"
+                Width="150"
+                Height="75"
+                Margin="0"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2"
+                Orientation="Horizontal"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Margin="0">
+
+                <Button 
+                Style="{StaticResource Button2}"
+                Content="MEJORA 1"
+                HorizontalAlignment="Stretch"
+                Width="100"
+                Height="75"
+                Margin="10"/>
+
+                <Button 
+                Style="{StaticResource Button2}"
+                Content="MEJORA 2"
+                HorizontalAlignment="Stretch"
+                Width="100"
+                Height="75"
+                Margin="0"/>
+
+                <Button 
+                Style="{StaticResource Button2}"
+                Content="MEJORA 3"
+                HorizontalAlignment="Stretch"
+                Width="100"
+                Height="75"
+                Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+
+        
 
     </Grid>
 </Page>
