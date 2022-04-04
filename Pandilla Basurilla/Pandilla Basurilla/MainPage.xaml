@@ -24,6 +24,7 @@
             <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="FontStretch" Value="Condensed"/>
             <Setter Property="Margin" Value="10, 15"/>
+            <Setter Property="CornerRadius" Value="5"/>
         </Style>
         <Style x:Key="QuitStyle" TargetType="Button">
             <Setter Property="Background" Value="#FFB0130F" />
@@ -32,6 +33,7 @@
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="Height" Value="80"/>
             <Setter Property="Margin" Value=" 10,30"/>
+            <Setter Property="CornerRadius" Value="5"/>
         </Style>
     </Page.Resources>
 
@@ -62,7 +64,8 @@
                     Width="60"
                     Background="#4c9d23"
                     Foreground="White"
-                    Click="ButtonAjustes_Click"/>
+                    Click="ButtonAjustes_Click"
+                    CornerRadius="5"/>
 
             <StackPanel Orientation="Vertical"
                         HorizontalAlignment="Center"
