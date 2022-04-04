@@ -58,7 +58,7 @@
 
             <StackPanel Orientation="Vertical"
                     HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
+                    VerticalAlignment="Bottom"
                         Grid.Row="0"
                         Grid.Column="1">
 
@@ -89,8 +89,10 @@
 
             <StackPanel Grid.Row="1"
                         Grid.Column="1">
-                <Slider/>
-                <Slider/>
+                <Slider Margin="10"
+                        Background="#4c9d23"/>
+                <Slider Margin="10"
+                        Background="#275211"/>
             </StackPanel>
 
         </Grid>
