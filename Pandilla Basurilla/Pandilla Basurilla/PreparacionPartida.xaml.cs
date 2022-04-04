@@ -52,20 +52,26 @@ namespace Pandilla_Basurilla
 
         private void Personajes_Click(object sender, RoutedEventArgs e)
         {
+            MapsScreen.Visibility = Visibility.Collapsed;
             PersonajesScreen.Visibility = Visibility.Visible;
+            SkinsScreen.Visibility = Visibility.Collapsed;
            
         }
 
         private void Skins_Click(object sender, RoutedEventArgs e)
         {
+            MapsScreen.Visibility = Visibility.Collapsed;
             PersonajesScreen.Visibility = Visibility.Collapsed;
+            SkinsScreen.Visibility = Visibility.Visible;
           
         }
 
         private void Mapas_Click(object sender, RoutedEventArgs e)
         {
+            
+            MapsScreen.Visibility = Visibility.Visible;
             PersonajesScreen.Visibility = Visibility.Collapsed;
-           
+            SkinsScreen.Visibility = Visibility.Collapsed;
         }
     }
 }

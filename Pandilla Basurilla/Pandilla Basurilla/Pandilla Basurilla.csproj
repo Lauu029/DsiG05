@@ -145,12 +145,30 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\ajo.png" />
+    <Content Include="Assets\awacato.png" />
+    <Content Include="Assets\berenjeno.png" />
+    <Content Include="Assets\brocoli.png" />
+    <Content Include="Assets\champ.png" />
     <Content Include="Assets\default-profile-image.png" />
     <Content Include="Assets\FotoMenuPrincipal.png" />
+    <Content Include="Assets\fresa.png" />
     <Content Include="Assets\mapa1.png" />
     <Content Include="Assets\mapa2.png" />
     <Content Include="Assets\mapa3.png" />
     <Content Include="Assets\mapa4.png" />
+    <Content Include="Assets\pimiento.png" />
+    <Content Include="Assets\pistola1.png" />
+    <Content Include="Assets\pistola2.png" />
+    <Content Include="Assets\pistola3.png" />
+    <Content Include="Assets\pistola4.png" />
+    <Content Include="Assets\pistola5.png" />
+    <Content Include="Assets\pistola6.png" />
+    <Content Include="Assets\pistola7.png" />
+    <Content Include="Assets\pistola8.png" />
+    <Content Include="Assets\pistola9.png" />
+    <Content Include="Assets\platano.png" />
+    <Content Include="Assets\sandia.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
