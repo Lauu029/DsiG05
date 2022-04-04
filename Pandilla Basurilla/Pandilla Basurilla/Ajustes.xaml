@@ -37,52 +37,63 @@
 
 
     <Grid Background="#FFAEDD94">
-        
+
         <Button x:Name="BackButton"
                 Style="{StaticResource BackButtonStyle }" 
                 Content="Volver"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Bottom"
                 Click="BackButton_Click"/>
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Vertical"
+            <StackPanel Orientation="Vertical"
                     HorizontalAlignment="Center"
-                    VerticalAlignment="Center">
+                    VerticalAlignment="Center"
+                        Grid.Row="0"
+                        Grid.Column="1">
 
-            <TextBlock Text="AJUSTES"
+                <TextBlock Text="AJUSTES"
                        HorizontalAlignment="Center"
                        FontSize="75"
                        Margin="30"
                        Style="{StaticResource TittleStyle}"/>
 
-            <Button Content="MI CUENTA"
+                <Button Content="MI CUENTA"
                     HorizontalAlignment="Stretch"
                     Name="MiCuentaButton"
                     Click="MiCuentaButton_Click"
                     Style="{StaticResource ButtonsStyle}"/>
 
-            <Button Content="ESTADISTICAS"
+                <Button Content="ESTADISTICAS"
                     Name="EstadisticasButton"
                     HorizontalAlignment="Stretch"
                     Click="EstadisticasButton_Click"
                     Style="{StaticResource ButtonsStyle}"/>
 
-            <Button Content="IDIOMA"
+                <Button Content="IDIOMA"
                     HorizontalAlignment="Stretch"
                     Name="IdiomaButton"
                     Click="IdiomaButton_Click"
                     Style="{StaticResource ButtonsStyle}"/>
+            </StackPanel>
 
-            
-            
-            <StackPanel>
+            <StackPanel Grid.Row="1"
+                        Grid.Column="1">
+                <Slider/>
                 <Slider/>
             </StackPanel>
 
-            <StackPanel>
-                <Slider/>
-            </StackPanel>
+        </Grid>
 
-        </StackPanel>
     </Grid>
 </Page>
