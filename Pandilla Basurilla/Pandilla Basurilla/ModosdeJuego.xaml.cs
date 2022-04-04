@@ -42,5 +42,10 @@ namespace Pandilla_Basurilla
             }
             return false;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PreparacionPartida));
+        }
     }
 }

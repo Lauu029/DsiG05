@@ -22,9 +22,13 @@ namespace Pandilla_Basurilla
     /// </summary>
     public sealed partial class PreparacionPartida : Page
     {
+        public bool mapsVisible, skinsVisible, personajesVisible;
         public PreparacionPartida()
         {
             this.InitializeComponent();
+            personajesVisible = false;
+            skinsVisible = false;
+            mapsVisible = false;
         }
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
@@ -43,6 +47,41 @@ namespace Pandilla_Basurilla
                 return true;
             }
             return false;
+        }
+
+        private void PlayButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Partida));
+        }
+
+        private void Personajes_Click(object sender, RoutedEventArgs e)
+        {
+            if (!personajesVisible)
+            {
+                personajesVisible = true;
+                skinsVisible = false;
+                mapsVisible = false;
+            }
+        }
+
+        private void Skins_Click(object sender, RoutedEventArgs e)
+        {
+            if (!skinsVisible)
+            {
+                personajesVisible = false;
+                skinsVisible = true;
+                mapsVisible = false;
+            }
+        }
+
+        private void Mapas_Click(object sender, RoutedEventArgs e)
+        {
+            if (!mapsVisible)
+            {
+                personajesVisible = false;
+                skinsVisible = false;
+                mapsVisible = true;
+            }
         }
     }
 }

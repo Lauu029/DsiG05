@@ -145,7 +145,12 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\default-profile-image.png" />
     <Content Include="Assets\FotoMenuPrincipal.png" />
+    <Content Include="Assets\mapa1.png" />
+    <Content Include="Assets\mapa2.png" />
+    <Content Include="Assets\mapa3.png" />
+    <Content Include="Assets\mapa4.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

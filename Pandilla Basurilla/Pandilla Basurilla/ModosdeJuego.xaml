@@ -72,17 +72,20 @@
             <Button Content="PRACTICA"
                         Margin="10"
                         Style="{StaticResource GamemodeStyle}"
-                        HorizontalAlignment="Stretch" CharacterSpacing="-1"/>
+                        HorizontalAlignment="Stretch" CharacterSpacing="-1"
+                    Click="Button_Click"/>
 
             <Button Content="ONLINE"
                         Margin="40"
                         Style="{StaticResource GamemodeStyle}"
-                        HorizontalAlignment="Stretch"/>
+                        HorizontalAlignment="Stretch"
+                    Click="Button_Click"/>
 
             <Button Content="JUGAR CON AMIGOS"
                         Margin="10"
                         Style="{StaticResource GamemodeStyle}"
-                        HorizontalAlignment="Stretch"/>
+                        HorizontalAlignment="Stretch"
+                    Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Page>
