@@ -55,13 +55,19 @@
                        FontWeight="SemiBold"
                        Foreground="White"/>
 
+            <!--<Image Source="Assets/AjustesN.png"
+                   Grid.Row="0"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   Height="90"/>-->
+
             <Button Grid.Row="2"
                     HorizontalAlignment="Right"
                     VerticalAlignment="Bottom"
                     Margin="20"
                     Content="Ajustes"
-                    Height="60"
-                    Width="60"
+                    Height="70"
+                    Width="70"
                     Background="#4c9d23"
                     Foreground="White"
                     Click="ButtonAjustes_Click"
