@@ -91,8 +91,28 @@
 
             <StackPanel Grid.Row="1"
                         Grid.Column="1">
-                
-                <Slider Margin="10"
+
+                <Canvas>
+                    <Image Source="Assets/NoMusic.png" Height="60" Width="45"/>
+                    <Image Source="Assets/NoSonidos.png" Height="110" Canvas.Top="65" Width="45"/>
+                </Canvas>
+
+                <Canvas HorizontalAlignment="Right">
+                    <Image Source="Assets/Music.png"
+                           Height="45" 
+                           Width="40" 
+                           Canvas.Left="-40"
+                           Canvas.Top="6"/>
+
+                    <Image Source="Assets/Sonidos.png" 
+                           Height="45" 
+                           Width="40" 
+                           Canvas.Left="-40" 
+                           Canvas.Top="98"/>
+
+                </Canvas>
+
+                <Slider Margin="50,10"
                         Background="#4c9d23"/>
 
                 <TextBlock Text="Música"
@@ -100,7 +120,7 @@
                            HorizontalAlignment="Center"
                            FontWeight="Medium"/>
 
-                <Slider Margin="10"
+                <Slider Margin="50,10"
                         Background="#4c9d23"/>
 
                 <TextBlock Text="Sonidos"
@@ -110,7 +130,7 @@
 
             </StackPanel>
 
-            <StackPanel Margin="450,720,0,0"
+            <!--<StackPanel Margin="450,720,0,0"
                         Grid.RowSpan="2"
                         Orientation="Vertical">
                 
@@ -131,7 +151,7 @@
                        Margin="0,0,0,40"/>
                 
                 <Image Source="Assets/Sonidos.png" Height="55" Width="45"/>
-            </StackPanel>
+            </StackPanel>-->
 
         </Grid>
 

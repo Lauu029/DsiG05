@@ -145,8 +145,6 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\AjustesN.png" />
-    <Content Include="Assets\Ajustes.jpg" />
     <Content Include="Assets\Ajustes.png" />
     <Content Include="Assets\ajo.png" />
     <Content Include="Assets\awacato.png" />
