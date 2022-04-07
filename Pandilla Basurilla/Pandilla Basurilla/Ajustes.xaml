@@ -40,14 +40,8 @@
 
     <Grid Background="#FFAEDD94">
 
-        <Button x:Name="BackButton"
-                Style="{StaticResource BackButtonStyle }" 
-                Content="Volver"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Bottom"
-                Click="BackButton_Click"/>
-
-        <Grid>
+        <Viewbox>
+        <Grid Width="1165" Height="772">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="3*"/>
@@ -58,7 +52,15 @@
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
 
-            <StackPanel Orientation="Vertical"
+                <Button x:Name="BackButton"
+                Style="{StaticResource BackButtonStyle }" 
+                Content="Volver"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Click="BackButton_Click"
+                        Grid.Row="1"/>
+            
+                <StackPanel Orientation="Vertical"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Bottom"
                         Grid.Row="0"
@@ -156,6 +158,6 @@
             </StackPanel>-->
 
         </Grid>
-
+        </Viewbox>
     </Grid>
 </Page>
