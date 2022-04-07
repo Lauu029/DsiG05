@@ -169,8 +169,8 @@
                 </Button>
             </Grid>
         </Viewbox>
-        <Viewbox Grid.Column="1" Grid.Row="1">
-            <Grid Grid.Column="1" x:Name="SkinsScreen"  Margin="120,80,120,200"
+        <Viewbox Grid.Column="1" Grid.Row="1" Margin="15,5,120,150">
+            <Grid Grid.Column="1" x:Name="SkinsScreen"
                     CornerRadius="5"
                     BorderBrush="#FFE2EE79"
                     BorderThickness="6" Grid.Row="1" Visibility="Collapsed">
@@ -223,8 +223,8 @@
                 </Button>
             </Grid>
         </Viewbox>
-        <Viewbox Grid.Column="1" Grid.Row="1">
-            <Grid Grid.Column="1" x:Name="PersonajesScreen"  Margin="120,80,120,200"
+        <Viewbox Grid.Column="1" Grid.Row="1" Margin="120,80,120,200">
+            <Grid  x:Name="PersonajesScreen" 
                     CornerRadius="5"
                     BorderBrush="#FFE2EE79"
                     BorderThickness="6" Grid.Row="1" Visibility="Collapsed">
