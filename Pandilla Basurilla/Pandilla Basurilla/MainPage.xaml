@@ -74,8 +74,8 @@
             </Button>
 
             <StackPanel Orientation="Vertical"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center">
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch">
                 
                 <TextBlock HorizontalAlignment="Center"
                            VerticalAlignment="Center"

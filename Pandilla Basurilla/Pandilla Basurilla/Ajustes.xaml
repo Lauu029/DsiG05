@@ -118,7 +118,8 @@
                 <TextBlock Text="Música"
                            FontSize="30"
                            HorizontalAlignment="Center"
-                           FontWeight="Medium"/>
+                           FontWeight="Medium"
+                           Foreground="Black"/>
 
                 <Slider Margin="50,10"
                         Background="#4c9d23"/>
@@ -126,7 +127,8 @@
                 <TextBlock Text="Sonidos"
                            FontSize="30"
                            HorizontalAlignment="Center"
-                           FontWeight="Medium"/>
+                           FontWeight="Medium"
+                           Foreground="Black"/>
 
             </StackPanel>
 
