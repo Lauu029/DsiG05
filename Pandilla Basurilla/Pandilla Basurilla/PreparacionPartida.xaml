@@ -11,7 +11,7 @@
         <Style x:Key="ExitStyle" TargetType="Button">
             <Setter Property="Background" Value="#FFB0130F" />
             <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontSize" Value="10"/>
             <Setter Property="CornerRadius" Value="3"/>
         </Style>
         <Style x:Key="ButtonsStyle" TargetType="Button">
@@ -20,7 +20,7 @@
             <Setter Property="Height" Value="100"/>
             <Setter Property="Background" Value="#FFE2EE79"/>
             <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="FontSize" Value="30"/>
+
             <Setter Property="FontStretch" Value="Condensed"/>
             <Setter Property="CornerRadius" Value="3"/>
         </Style>
@@ -34,64 +34,71 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
-
-        <StackPanel Grid.Column="0" Grid.Row="0"
-                    VerticalAlignment="Top"
+        <Viewbox Grid.Column="0" Grid.Row="0">
+            <StackPanel VerticalAlignment="Stretch"
                     HorizontalAlignment="Left"
-                    Margin="30"
+                    Margin="5,5,30,30"
                     Background="#FFA8C6FA"
                     BorderThickness="5"
                     BorderBrush="#FF0844A4"
                     CornerRadius="3">
-            <TextBlock Text="Player 1"
+                <TextBlock Text="Player 1"
                        Foreground="Black"
-                       FontSize="40"
-                       Width="200"
+                       FontSize="30"
                        Margin="10"
                        HorizontalAlignment="Center" TextAlignment="Center"/>
-        </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="1"
-                    VerticalAlignment="Center"
+            </StackPanel>
+        </Viewbox>
+        <Viewbox Grid.Column="0" Grid.Row="1">
+            <StackPanel  VerticalAlignment="Center"
                     Margin="30,0,30,0" Height="555">
-            <Button x:Name="Personajes"
+                <Button x:Name="Personajes"
                     Content="Personajes"
+                        FontSize="30"
                     HorizontalAlignment="Center"
                     Style="{StaticResource ButtonsStyle}"
                     Click="Personajes_Click"/>
-            <Button x:Name="Skins"
-                    Content="Skins"
+                <Button x:Name="Armas"
+                    Content="Armas"
+                        FontSize="30"
                     HorizontalAlignment="Center"
                     Style="{StaticResource ButtonsStyle}"
                     Click="Skins_Click"/>
-            <Button x:Name="Mapas"
+                <Button x:Name="Mapas"
                     Content="Mapas"
+                        FontSize="30"
                     HorizontalAlignment="Center"
                     Style="{StaticResource ButtonsStyle}"
                     Click="Mapas_Click"/>
-        </StackPanel>
-        <Button Grid.Column="1" Grid.Row="1"
-                x:Name="BackButton"
+            </StackPanel>
+        </Viewbox>
+        <Viewbox Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Stretch">
+                <Button  x:Name="BackButton"
                     Style="{StaticResource ExitStyle}"
-                    Margin="50"
+                    Margin="10"
                     Content="Rendirse"
                     IsEnabled="{x:Bind Mode=OneWay, Path=Frame.CanGoBack}" 
                     ToolTipService.ToolTip="Back"
                     Click="BackButton_Click"
-                    Width="170" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="54"/>
-        <Button Grid.Column="1" Grid.Row="1"
+                    Width="100"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="25"/>
+                <Button Grid.Column="1" Grid.Row="1"
                 x:Name="PlayButton"
                      Style="{StaticResource ButtonsStyle}"
-                     Margin="50"
+                     Margin="100,10,10,10"
                      Content="Jugar"
+                     FontSize="10"
                      IsEnabled="{x:Bind Mode=OneWay, Path=Frame.CanGoBack}" 
                      ToolTipService.ToolTip="Back"
                      Click="PlayButton_Click"
-                     Width="170"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Bottom" Height="54"
+                     Width="100"
+                     HorizontalAlignment="Right"
+                     VerticalAlignment="Bottom" Height="25"
                     />
-
-        <StackPanel Grid.Column="1"
+            </StackPanel>
+        </Viewbox>
+        <Viewbox Grid.Column="1" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Margin="20">
+            <StackPanel Grid.Column="1"
                 HorizontalAlignment="Left"
                        VerticalAlignment="Top" Width="100" Height="100"  
                        Background="#FFE9F29B"
@@ -99,169 +106,176 @@
                         BorderThickness="3"
                         CornerRadius="3">
 
-            <TextBlock Text="30" 
+                <TextBlock Text="30" 
                        FontSize="50*"
                        Foreground="Black"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        Margin="10"/>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="0"
+            </StackPanel>
+        </Viewbox>
+        <Viewbox Grid.Column="1" Grid.Row="0">
+            <StackPanel Orientation="Horizontal"
                 HorizontalAlignment="Right"
                         VerticalAlignment="Stretch"
                         Width="400"
-                    Margin="20,5,10,10"
+                    Margin="500,1,5,50"
                         Background="#FFFFB4B0"
                     BorderBrush="#FFE61610"
                     BorderThickness="5"
                     CornerRadius="3">
-            <Image Height="150" Width="150"
+                <Image Height="130" Width="130"
                    Source="Assets/default-profile-image.png" VerticalAlignment="Center" HorizontalAlignment="Left"
                    Margin="20"/>
 
-        </StackPanel>
-        <TextBlock Grid.Column="1" Grid.Row="0"
-                Text="PLAYER 2"
+                <TextBlock Grid.Column="1" Grid.Row="0"
+                       Text="PLAYER 2"
                        Margin="30"
                        Foreground="Black"
                        HorizontalAlignment="Right"
                        FontSize="30"
                        VerticalAlignment="Top"/>
-
-        <Grid Grid.Column="1" x:Name="MapsScreen"  Margin="120,80,120,200"
+            </StackPanel>
+        </Viewbox>
+        <Viewbox Grid.Column="1" Grid.Row="1">
+            <Grid Grid.Column="1" x:Name="MapsScreen"  Margin="120,80,120,200"
                     CornerRadius="5"
                     BorderBrush="#FFE2EE79"
                     BorderThickness="6" Grid.Row="1" Visibility="Collapsed">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <Button Grid.Row="1" Grid.Column="1"
+                <Button Grid.Row="1" Grid.Column="1"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/mapa1.png"/>
-            </Button>
-            <Button Grid.Row="0" Grid.Column="1"
+                    <Image Source="Assets/mapa1.png"/>
+                </Button>
+                <Button Grid.Row="0" Grid.Column="1"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/mapa2.png"/>
-            </Button>
-            <Button  Grid.Row="1" Grid.Column="0"
+                    <Image Source="Assets/mapa2.png"/>
+                </Button>
+                <Button  Grid.Row="1" Grid.Column="0"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/mapa3.png"/>
-            </Button>
-            <Button  Grid.Row="0" Grid.Column="0"
+                    <Image Source="Assets/mapa3.png"/>
+                </Button>
+                <Button  Grid.Row="0" Grid.Column="0"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/mapa4.png"/>
-            </Button>
-        </Grid>
-        <Grid Grid.Column="1" x:Name="SkinsScreen"  Margin="120,80,120,200"
+                    <Image Source="Assets/mapa4.png"/>
+                </Button>
+            </Grid>
+        </Viewbox>
+        <Viewbox Grid.Column="1" Grid.Row="1">
+            <Grid Grid.Column="1" x:Name="SkinsScreen"  Margin="120,80,120,200"
                     CornerRadius="5"
                     BorderBrush="#FFE2EE79"
                     BorderThickness="6" Grid.Row="1" Visibility="Collapsed">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <Button Grid.Row="1" Grid.Column="1"
+                <Button Grid.Row="1" Grid.Column="1"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/pistola1.png"/>
-            </Button>
-            <Button Grid.Row="0" Grid.Column="1"
+                    <Image Source="Assets/pistola1.png"/>
+                </Button>
+                <Button Grid.Row="0" Grid.Column="1"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/pistola2.png"/>
-            </Button>
-            <Button  Grid.Row="1" Grid.Column="0"
+                    <Image Source="Assets/pistola2.png"/>
+                </Button>
+                <Button  Grid.Row="1" Grid.Column="0"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/pistola3.png"/>
-            </Button>
-            <Button  Grid.Row="0" Grid.Column="0"
+                    <Image Source="Assets/pistola3.png"/>
+                </Button>
+                <Button  Grid.Row="0" Grid.Column="0"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/pistola4.png"/>
-            </Button>
-            <Button  Grid.Row="2" Grid.Column="0"
+                    <Image Source="Assets/pistola4.png"/>
+                </Button>
+                <Button  Grid.Row="2" Grid.Column="0"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/pistola5.png"/>
-            </Button>
-            <Button  Grid.Row="2" Grid.Column="1"
+                    <Image Source="Assets/pistola5.png"/>
+                </Button>
+                <Button  Grid.Row="2" Grid.Column="1"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/pistola6.png"/>
-            </Button>
-            <Button  Grid.Row="0" Grid.Column="2"
+                    <Image Source="Assets/pistola6.png"/>
+                </Button>
+                <Button  Grid.Row="0" Grid.Column="2"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/pistola7.png"/>
-            </Button>
-            <Button  Grid.Row="1" Grid.Column="2"
+                    <Image Source="Assets/pistola7.png"/>
+                </Button>
+                <Button  Grid.Row="1" Grid.Column="2"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/pistola8.png"/>
-            </Button>
-            <Button  Grid.Row="2" Grid.Column="2"
+                    <Image Source="Assets/pistola8.png"/>
+                </Button>
+                <Button  Grid.Row="2" Grid.Column="2"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/pistola9.png"/>
-            </Button>
-        </Grid>
-        <Grid Grid.Column="1" x:Name="PersonajesScreen"  Margin="120,80,120,200"
+                    <Image Source="Assets/pistola9.png"/>
+                </Button>
+            </Grid>
+        </Viewbox>
+        <Viewbox Grid.Column="1" Grid.Row="1">
+            <Grid Grid.Column="1" x:Name="PersonajesScreen"  Margin="120,80,120,200"
                     CornerRadius="5"
                     BorderBrush="#FFE2EE79"
                     BorderThickness="6" Grid.Row="1" Visibility="Collapsed">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <Button Grid.Row="1" Grid.Column="1"
+                <Button Grid.Row="1" Grid.Column="1"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/ajo.png"/>
-            </Button>
-            <Button Grid.Row="0" Grid.Column="1"
+                    <Image Source="Assets/ajo.png"/>
+                </Button>
+                <Button Grid.Row="0" Grid.Column="1"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/awacato.png"/>
-            </Button>
-            <Button  Grid.Row="1" Grid.Column="0"
+                    <Image Source="Assets/awacato.png"/>
+                </Button>
+                <Button  Grid.Row="1" Grid.Column="0"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/berenjeno.png"/>
-            </Button>
-            <Button  Grid.Row="0" Grid.Column="0"
+                    <Image Source="Assets/berenjeno.png"/>
+                </Button>
+                <Button  Grid.Row="0" Grid.Column="0"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/pimiento.png"/>
-            </Button>
-            <Button  Grid.Row="2" Grid.Column="0"
+                    <Image Source="Assets/pimiento.png"/>
+                </Button>
+                <Button  Grid.Row="2" Grid.Column="0"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/sandia.png"/>
-            </Button>
-            <Button  Grid.Row="2" Grid.Column="1"
+                    <Image Source="Assets/sandia.png"/>
+                </Button>
+                <Button  Grid.Row="2" Grid.Column="1"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/platano.png"/>
-            </Button>
-            <Button  Grid.Row="0" Grid.Column="2"
+                    <Image Source="Assets/platano.png"/>
+                </Button>
+                <Button  Grid.Row="0" Grid.Column="2"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/fresa.png"/>
-            </Button>
-            <Button  Grid.Row="1" Grid.Column="2"
+                    <Image Source="Assets/fresa.png"/>
+                </Button>
+                <Button  Grid.Row="1" Grid.Column="2"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/brocoli.png"/>
-            </Button>
-            <Button  Grid.Row="2" Grid.Column="2"
+                    <Image Source="Assets/brocoli.png"/>
+                </Button>
+                <Button  Grid.Row="2" Grid.Column="2"
                     Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="Assets/champ.png"/>
-            </Button>
-        </Grid>
-
+                    <Image Source="Assets/champ.png"/>
+                </Button>
+            </Grid>
+        </Viewbox>
     </Grid>
 </Page>
