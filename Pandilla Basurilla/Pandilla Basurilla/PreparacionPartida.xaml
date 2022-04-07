@@ -100,7 +100,7 @@
                         CornerRadius="3">
 
             <TextBlock Text="30" 
-                       FontSize="50"
+                       FontSize="50*"
                        Foreground="Black"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
@@ -108,10 +108,9 @@
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="0"
                 HorizontalAlignment="Right"
-                        VerticalAlignment="Top"
+                        VerticalAlignment="Stretch"
                         Width="400"
-                        Height="200"
-                    Margin="20"
+                    Margin="20,5,10,10"
                         Background="#FFFFB4B0"
                     BorderBrush="#FFE61610"
                     BorderThickness="5"
