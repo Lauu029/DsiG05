@@ -14,7 +14,7 @@
             <Setter Property="FontWeight" Value="ExtraBold"/>
             <Setter Property="FontStretch" Value="ExtraExpanded"/>
         </Style>
-            
+
         <Style x:Key="ButtonsStyle" TargetType="Button">
             <Setter Property="Width" Value="400"/>
             <Setter Property="Height" Value="80"/>
@@ -37,25 +37,40 @@
         </Style>
     </Page.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+
 
         <Image Source="Assets/FotoMenuPrincipal.png"
-               Margin="-50"/>
-
+                   HorizontalAlignment="Stretch"
+                   Stretch="Fill"/>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-            <TextBlock x:Name="Text_Dinero"
+            <Viewbox VerticalAlignment="Top" HorizontalAlignment="Left" Height="50">
+                <TextBlock x:Name="Text_Dinero"
                        Text="$ 20"
                        Margin="20"
                        FontSize="50"
                        FontWeight="SemiBold"
                        Foreground="White"/>
+            </Viewbox>
 
-            <Button Grid.Row="2"
+            <Viewbox Grid.Row="1" Grid.Column="2"
+                     HorizontalAlignment="Right"
+                     VerticalAlignment="Bottom"
+                     Margin="20"
+                     Height="100"
+                     >
+
+                <Button Grid.Row="2"
                     HorizontalAlignment="Right"
                     VerticalAlignment="Bottom"
                     Margin="20"
@@ -65,65 +80,72 @@
                     Foreground="White"
                     Click="ButtonAjustes_Click"
                     CornerRadius="5">
-                <Canvas>
-                    <Image Source="Assets/Ajustes.png"
+                    <Canvas>
+                        <Image Source="Assets/Ajustes.png"
                            Height="60"
                            HorizontalAlignment="Center" Canvas.Left="-30" Canvas.Top="-30" VerticalAlignment="Top"
                            />
-                </Canvas>
-            </Button>
+                    </Canvas>
+                </Button>
+            </Viewbox>
 
-            <StackPanel Orientation="Vertical"
+            <Viewbox Grid.Column="1">
+
+
+                <StackPanel Orientation="Vertical"
                         HorizontalAlignment="Stretch"
                         VerticalAlignment="Stretch">
-                
-                <TextBlock HorizontalAlignment="Center"
+
+                    <TextBlock HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            Text="Pandilla"
-                           FontSize="100"
+                           FontSize="90"
                            Style="{StaticResource TittleStyle}"/>
-                
-                <TextBlock HorizontalAlignment="Center"
+
+                    <TextBlock HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            Text="Basurilla"
-                           FontSize="130"
+                           FontSize="110"
                            Style="{StaticResource TittleStyle}"/>
-                
-            </StackPanel>
 
-            <StackPanel Orientation="Vertical"
+                </StackPanel>
+            </Viewbox>
+
+            <Viewbox Grid.Row="2" Grid.Column="1">
+                <StackPanel Orientation="Vertical"
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         Margin="20"
                         Grid.Row="2"
                         >
 
-                <Button Content="JUGAR"
+                    <Button Content="JUGAR"
                         HorizontalAlignment="Stretch"
                         Name="JugarButton"
                         Click="JugarButton_Click"
                         Style="{StaticResource ButtonsStyle}"/>
-                
-                <Button Content="MISIONES"
+
+                    <Button Content="MISIONES"
                         Name="Misiones"
                         HorizontalAlignment="Stretch"
                         Click="Misiones_Click"
                         Style="{StaticResource ButtonsStyle}"/>
 
-                <Button Content="TIENDA"
+                    <Button Content="TIENDA"
                         HorizontalAlignment="Stretch"
                         Name="ModosdeJuego"
                         Click="TiendaButton_Click"
                         Style="{StaticResource ButtonsStyle}"/>
-                
-                <Button Content="SALIR"
+
+                    <Button Content="SALIR"
                         HorizontalAlignment="Stretch"
                         Name="Salida"
                         Style="{StaticResource QuitStyle}"/>
 
-            </StackPanel>
+                </StackPanel>
+            </Viewbox>
         </Grid>
-        
+
 
     </Grid>
 </Page>
