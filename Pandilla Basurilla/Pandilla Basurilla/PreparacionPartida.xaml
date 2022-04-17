@@ -158,7 +158,7 @@
                   BorderBrush="#FFE2EE79"
                   BorderThickness="6" 
                   Grid.Row="1" 
-                  Visibility="Visible">
+                  Visibility="Collapsed">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
