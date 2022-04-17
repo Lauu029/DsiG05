@@ -26,7 +26,17 @@ namespace Pandilla_Basurilla
         {
             this.InitializeComponent();
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            // If e.Parameter is a string, set the TextBlock's text with it.
+            if (e?.Parameter is ImageSource image)
+            {
+                MapaJugador1.Source = image;
+                MapaJugador2.Source = image;
+            }
 
+            base.OnNavigatedTo(e);
+        }
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));

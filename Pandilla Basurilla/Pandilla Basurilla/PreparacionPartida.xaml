@@ -34,114 +34,131 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
+        
         <Viewbox Grid.Column="0" Grid.Row="0">
             <StackPanel VerticalAlignment="Stretch"
-                    HorizontalAlignment="Left"
-                    Margin="5,5,30,30"
-                    Background="#FFA8C6FA"
-                    BorderThickness="5"
-                    BorderBrush="#FF0844A4"
-                    CornerRadius="3">
+                        HorizontalAlignment="Left"
+                        Margin="5,5,30,30"
+                        Background="#FFA8C6FA"
+                        BorderThickness="5"
+                        BorderBrush="#FF0844A4"
+                        CornerRadius="3">
                 <TextBlock Text="Player 1"
-                       Foreground="Black"
-                       FontSize="30"
-                       Margin="10"
-                       HorizontalAlignment="Center" TextAlignment="Center"/>
+                           Foreground="Black"
+                           FontSize="30"
+                           Margin="10"
+                           HorizontalAlignment="Center" 
+                           TextAlignment="Center"/>
             </StackPanel>
         </Viewbox>
+        
         <Viewbox Grid.Column="0" Grid.Row="1">
-            <StackPanel  VerticalAlignment="Center"
-                    Margin="30,0,30,0" Height="555">
+            <StackPanel VerticalAlignment="Center"
+                        Margin="30,0,30,0" 
+                        Height="555">
                 <Button x:Name="Personajes"
-                    Content="Personajes"
+                        Content="Personajes"
                         FontSize="30"
-                    HorizontalAlignment="Center"
-                    Style="{StaticResource ButtonsStyle}"
-                    Click="Personajes_Click"/>
+                        HorizontalAlignment="Center"
+                        Style="{StaticResource ButtonsStyle}"
+                        Click="Personajes_Click"/>
                 <Button x:Name="Armas"
-                    Content="Armas"
+                        Content="Armas"
                         FontSize="30"
-                    HorizontalAlignment="Center"
-                    Style="{StaticResource ButtonsStyle}"
-                    Click="Skins_Click"/>
+                        HorizontalAlignment="Center"
+                        Style="{StaticResource ButtonsStyle}"
+                        Click="Skins_Click"/>
                 <Button x:Name="Mapas"
-                    Content="Mapas"
+                        Content="Mapas"
                         FontSize="30"
-                    HorizontalAlignment="Center"
-                    Style="{StaticResource ButtonsStyle}"
-                    Click="Mapas_Click"/>
+                        HorizontalAlignment="Center"
+                        Style="{StaticResource ButtonsStyle}"
+                        Click="Mapas_Click"/>
             </StackPanel>
         </Viewbox>
+        
         <Viewbox Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Stretch">
-                <Button  x:Name="BackButton"
-                    Style="{StaticResource ExitStyle}"
-                    Margin="10"
-                    Content="Rendirse"
-                    IsEnabled="{x:Bind Mode=OneWay, Path=Frame.CanGoBack}" 
-                    ToolTipService.ToolTip="Back"
-                    Click="BackButton_Click"
-                    Width="100"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="25"/>
-                <Button Grid.Column="1" Grid.Row="1"
-                x:Name="PlayButton"
-                     Style="{StaticResource ButtonsStyle}"
-                     Margin="100,10,10,10"
-                     Content="Jugar"
-                     FontSize="10"
-                     IsEnabled="{x:Bind Mode=OneWay, Path=Frame.CanGoBack}" 
-                     ToolTipService.ToolTip="Back"
-                     Click="PlayButton_Click"
-                     Width="100"
-                     HorizontalAlignment="Right"
-                     VerticalAlignment="Bottom" Height="25"
-                    />
+            <StackPanel Orientation="Horizontal" 
+                        VerticalAlignment="Bottom" 
+                        HorizontalAlignment="Stretch">
+                <Button x:Name="BackButton"
+                        Style="{StaticResource ExitStyle}"
+                        Margin="10"
+                        Content="Rendirse"
+                        IsEnabled="{x:Bind Mode=OneWay, Path=Frame.CanGoBack}" 
+                        ToolTipService.ToolTip="Back"
+                        Click="BackButton_Click"
+                        Width="100"  
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Bottom" 
+                        Height="25"/>
+                <Button Grid.Column="1" 
+                        Grid.Row="1"
+                        x:Name="PlayButton"
+                        Style="{StaticResource ButtonsStyle}"
+                        Margin="100,10,10,10"
+                        Content="Jugar"
+                        FontSize="10"
+                        IsEnabled="{x:Bind Mode=OneWay, Path=Frame.CanGoBack}" 
+                        ToolTipService.ToolTip="Back"
+                        Click="PlayButton_Click"
+                        Width="100"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom" 
+                        Height="25"/>
             </StackPanel>
         </Viewbox>
+        
         <Viewbox Grid.Column="1" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Margin="20">
             <StackPanel Grid.Column="1"
-                HorizontalAlignment="Left"
-                       VerticalAlignment="Top" Width="100" Height="100"  
-                       Background="#FFE9F29B"
-                       BorderBrush="#FFC1D045"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top" 
+                        Width="100" Height="100"  
+                        Background="#FFE9F29B"
+                        BorderBrush="#FFC1D045"
                         BorderThickness="3"
                         CornerRadius="3">
-
                 <TextBlock Text="30" 
-                       FontSize="50*"
-                       Foreground="Black"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Margin="10"/>
+                           FontSize="50*"
+                           Foreground="Black"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="10"/>
             </StackPanel>
         </Viewbox>
+        
         <Viewbox Grid.Column="1" Grid.Row="0">
             <StackPanel Orientation="Horizontal"
-                HorizontalAlignment="Right"
+                        HorizontalAlignment="Right"
                         VerticalAlignment="Stretch"
                         Width="400"
-                    Margin="500,1,5,50"
+                        Margin="500,1,5,50"
                         Background="#FFFFB4B0"
-                    BorderBrush="#FFE61610"
-                    BorderThickness="5"
-                    CornerRadius="3">
+                        BorderBrush="#FFE61610"
+                        BorderThickness="5"
+                        CornerRadius="3">
                 <Image Height="130" Width="130"
-                   Source="Assets/default-profile-image.png" VerticalAlignment="Center" HorizontalAlignment="Left"
-                   Margin="20"/>
-
+                       Source="Assets/default-profile-image.png" 
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="20"/>
                 <TextBlock Grid.Column="1" Grid.Row="0"
-                       Text="PLAYER 2"
-                       Margin="30"
-                       Foreground="Black"
-                       HorizontalAlignment="Right"
-                       FontSize="30"
-                       VerticalAlignment="Top"/>
+                           Text="PLAYER 2"
+                           Margin="30"
+                           Foreground="Black"
+                           HorizontalAlignment="Right"
+                           FontSize="30"
+                           VerticalAlignment="Top"/>
             </StackPanel>
         </Viewbox>
+        
         <Viewbox Grid.Column="1" Grid.Row="1">
             <Grid Grid.Column="1" x:Name="MapsScreen"  Margin="120,80,120,200"
-                    CornerRadius="5"
-                    BorderBrush="#FFE2EE79"
-                    BorderThickness="6" Grid.Row="1" Visibility="Collapsed">
+                  CornerRadius="5"
+                  BorderBrush="#FFE2EE79"
+                  BorderThickness="6" 
+                  Grid.Row="1" 
+                  Visibility="Visible">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -151,21 +168,33 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button Grid.Row="1" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Image Source="Assets/mapa1.png"/>
+                <Button  Grid.Row="0" Grid.Column="0"
+                         Width="300" Margin="10" 
+                         VerticalAlignment="Center" 
+                         HorizontalAlignment="Center"
+                        Click="Button1_Click">
+                    <Image x:Name="Mapa1" Source="Assets/mapa1.png"/>
                 </Button>
                 <Button Grid.Row="0" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Image Source="Assets/mapa2.png"/>
+                        Width="300" Margin="10" 
+                        Click="Button2_Click"
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center">
+                    <Image x:Name="Mapa2" Source="Assets/mapa2.png"/>
                 </Button>
                 <Button  Grid.Row="1" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Image Source="Assets/mapa3.png"/>
+                         Width="300" Margin="10" 
+                         VerticalAlignment="Center" 
+                         HorizontalAlignment="Center"
+                         Click="Button3_Click">
+                    <Image x:Name="Mapa3" Source="Assets/mapa3.png"/>
                 </Button>
-                <Button  Grid.Row="0" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Image Source="Assets/mapa4.png"/>
+                <Button Grid.Row="1" Grid.Column="1"
+                        Width="300" Margin="10" 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center"
+                        Click="Button4_Click">
+                    <Image x:Name="Mapa4" Source="Assets/mapa4.png"/>
                 </Button>
             </Grid>
         </Viewbox>
@@ -225,9 +254,10 @@
         </Viewbox>
         <Viewbox Grid.Column="1" Grid.Row="1" Margin="120,80,120,200">
             <Grid  x:Name="PersonajesScreen" 
-                    CornerRadius="5"
-                    BorderBrush="#FFE2EE79"
-                    BorderThickness="6" Grid.Row="1" Visibility="Collapsed">
+                   CornerRadius="5"
+                   BorderBrush="#FFE2EE79"
+                   BorderThickness="6" Grid.Row="1" 
+                   Visibility="Collapsed">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>

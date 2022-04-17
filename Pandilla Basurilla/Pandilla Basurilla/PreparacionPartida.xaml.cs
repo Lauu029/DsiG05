@@ -22,6 +22,7 @@ namespace Pandilla_Basurilla
     /// </summary>
     public sealed partial class PreparacionPartida : Page
     {
+        private ImageSource imgSrc;
         public PreparacionPartida()
         {
             this.InitializeComponent();
@@ -47,7 +48,7 @@ namespace Pandilla_Basurilla
 
         private void PlayButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Partida));
+            Frame.Navigate(typeof(Partida),imgSrc);
         }
 
         private void Personajes_Click(object sender, RoutedEventArgs e)
@@ -72,6 +73,22 @@ namespace Pandilla_Basurilla
             MapsScreen.Visibility = Visibility.Visible;
             PersonajesScreen.Visibility = Visibility.Collapsed;
             SkinsScreen.Visibility = Visibility.Collapsed;
+        }
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            imgSrc = Mapa1.Source;
+        }
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            imgSrc = Mapa2.Source;
+        }
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            imgSrc = Mapa3.Source;
+        }
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
+            imgSrc = Mapa4.Source;
         }
     }
 }
