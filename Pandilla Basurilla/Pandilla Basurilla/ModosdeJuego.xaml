@@ -28,7 +28,7 @@
 
         </Style>
     </Page.Resources>
-    
+
     <Grid Background="#FFAEDD94">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -39,55 +39,61 @@
             <ColumnDefinition Width="6*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Row="2"
-                x:Name="BackButton"
+        <Viewbox Grid.Row="1">
+        <Button  x:Name="BackButton"
                 Style="{StaticResource ExitStyle}"
                 Content="Volver"
                 VerticalAlignment="Bottom"
                 HorizontalAlignment="Center"
                 Width="125"
-                Margin="0,0,0,40"
+                 Margin="20,350,0,0"
                 IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
                 ToolTipService.ToolTip="Back"
                 Click="BackButton_Click"/>
-        
+        </Viewbox>
+        <Viewbox Grid.Column="1">
         <TextBlock Grid.Column="1"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
                 Text="Modos de juego"
                 Margin="30"
                 FontSize="75" CharacterSpacing="20" FontWeight="Bold" Foreground="#1e5900"/>
-
+        </Viewbox>
+        <Viewbox Grid.Column="0" Grid.Row="0">
         <TextBlock Text="$ 20"
-                   Margin="30"
+                   
                    FontSize="50"
+                   VerticalAlignment="Top" 
+                   Margin="20,0,0,150"
                    FontWeight="SemiBold"
                    Foreground="White"/>
-
-        <StackPanel Grid.Column="1"
+        </Viewbox>
+        <Viewbox Grid.Column="1" Grid.Row="1">
+            <StackPanel Grid.Column="1"
                 Orientation="Vertical"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Margin="20"
                 Grid.Row="1">
 
-            <Button Content="PRACTICA"
+                <Button Content="PRACTICA"
                         Margin="10"
                         Style="{StaticResource GamemodeStyle}"
                         HorizontalAlignment="Stretch" CharacterSpacing="-1"
                     Click="Button_Click"/>
 
-            <Button Content="ONLINE"
+                <Button Content="ONLINE"
                         Margin="40"
                         Style="{StaticResource GamemodeStyle}"
                         HorizontalAlignment="Stretch"
                     Click="Button_Click"/>
 
-            <Button Content="JUGAR CON AMIGOS"
+                <Button Content="JUGAR CON AMIGOS"
                         Margin="10"
                         Style="{StaticResource GamemodeStyle}"
                         HorizontalAlignment="Stretch"
                     Click="Button_Click"/>
-        </StackPanel>
+            </StackPanel>
+        </Viewbox>
     </Grid>
 </Page>

@@ -46,7 +46,7 @@
 
         <Viewbox Grid.Column="0" Grid.Row="0">
             <StackPanel Orientation="Horizontal"
-                Background="#a8c6fa" Width="701">
+                Background="#a8c6fa" Width="710" >
                 <StackPanel VerticalAlignment="Center" 
                             Orientation="Horizontal"
                             Margin="20">
@@ -88,7 +88,7 @@
                    Width="350"
                    Height="50"
                    HorizontalAlignment="Right"
-                            Margin="0,0,10,0">
+                            Margin="0,0,20,0">
 
                     <TextBlock Grid.Column="2" 
                            Text="VIDA JUGADOR 2"
@@ -102,7 +102,7 @@
             </StackPanel>
         </Viewbox>
         <Viewbox Grid.Row="0" Grid.Column="1">
-            <StackPanel  Background="White" Width="121">
+            <StackPanel  Background="White" Width="121" Height="120">
 
                 <TextBlock Grid.Column="1"
                    Text="RONDA"
@@ -121,7 +121,7 @@
                    Foreground="Black"/>
             </StackPanel>
         </Viewbox>
-        <Viewbox  Grid.Row="2" Grid.Column="2">
+        <Viewbox  Grid.Row="2" Grid.Column="2" >
             <StackPanel Background="#ffb4b0" Width="652">
                 <Button Grid.Row="2"
                 Grid.Column="2"
@@ -163,6 +163,18 @@
                         Width="100"
                         Height="75"
                         Margin="10"/>
+            </StackPanel>
+        </Viewbox>
+        <Viewbox Grid.Column="0" Grid.Row="1">
+            <StackPanel x:Name="MapaJugador1">
+                <Image Source="Assets/mapa4.png"
+                       Stretch="Fill"/>
+            </StackPanel>
+        </Viewbox>
+        <Viewbox Grid.Column="2" Grid.Row="1">
+            <StackPanel x:Name="MapaJugador2">
+                <Image Source="Assets/mapa4.png"
+                       Stretch="Fill"/>
             </StackPanel>
         </Viewbox>
     </Grid>
