@@ -128,6 +128,9 @@
     <Compile Include="MenuMisiones.xaml.cs">
       <DependentUpon>MenuMisiones.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MiCuenta.xaml.cs">
+      <DependentUpon>MiCuenta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ModosdeJuego.xaml.cs">
       <DependentUpon>ModosdeJuego.xaml</DependentUpon>
     </Compile>
@@ -201,6 +204,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MenuMisiones.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MiCuenta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

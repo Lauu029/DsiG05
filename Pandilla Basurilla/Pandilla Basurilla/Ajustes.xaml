@@ -16,7 +16,7 @@
         </Style>
 
         <Style x:Key="ButtonsStyle" TargetType="Button">
-            <Setter Property="Width" Value="400"/>
+            <Setter Property="Width" Value="370"/>
             <Setter Property="Height" Value="80"/>
             <Setter Property="Background" Value="#4c9d23"/>
             <Setter Property="Foreground" Value="Black"/>
@@ -133,29 +133,6 @@
                            Foreground="Black"/>
 
             </StackPanel>
-
-            <!--<StackPanel Margin="450,720,0,0"
-                        Grid.RowSpan="2"
-                        Orientation="Vertical">
-                
-                <Image Source="Assets/NoMusic.png"
-                       Margin="0,0,0,40"/>
-                
-                <Image Source="Assets/NoSonidos.png"/>
-                
-            </StackPanel>
-
-            <StackPanel Grid.Column="2"
-                        Orientation="Vertical"
-                        HorizontalAlignment="Left" 
-                        Margin="0,720,0,90" 
-                        Grid.RowSpan="2" >
-                
-                <Image Source="Assets/Music.png" Height="50" Width="40"
-                       Margin="0,0,0,40"/>
-                
-                <Image Source="Assets/Sonidos.png" Height="55" Width="45"/>
-            </StackPanel>-->
 
         </Grid>
         </Viewbox>
