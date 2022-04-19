@@ -215,39 +215,39 @@
                 </Grid.ColumnDefinitions>
 
                 <Button Grid.Row="1" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/pistola1.png"/>
                 </Button>
                 <Button Grid.Row="0" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/pistola2.png"/>
                 </Button>
                 <Button  Grid.Row="1" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/pistola3.png"/>
                 </Button>
                 <Button  Grid.Row="0" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/pistola4.png"/>
                 </Button>
                 <Button  Grid.Row="2" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/pistola5.png"/>
                 </Button>
                 <Button  Grid.Row="2" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/pistola6.png"/>
                 </Button>
                 <Button  Grid.Row="0" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/pistola7.png"/>
                 </Button>
                 <Button  Grid.Row="1" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/pistola8.png"/>
                 </Button>
                 <Button  Grid.Row="2" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/pistola9.png"/>
                 </Button>
             </Grid>
@@ -270,39 +270,39 @@
                 </Grid.ColumnDefinitions>
 
                 <Button Grid.Row="1" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/ajo.png"/>
                 </Button>
                 <Button Grid.Row="0" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/awacato.png"/>
                 </Button>
                 <Button  Grid.Row="1" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/berenjeno.png"/>
                 </Button>
                 <Button  Grid.Row="0" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/pimiento.png"/>
                 </Button>
                 <Button  Grid.Row="2" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/sandia.png"/>
                 </Button>
                 <Button  Grid.Row="2" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/platano.png"/>
                 </Button>
                 <Button  Grid.Row="0" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/fresa.png"/>
                 </Button>
                 <Button  Grid.Row="1" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/brocoli.png"/>
                 </Button>
                 <Button  Grid.Row="2" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
                     <Image Source="Assets/champ.png"/>
                 </Button>
             </Grid>

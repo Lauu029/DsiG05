@@ -150,10 +150,13 @@
     <Content Include="Assets\awacato.png" />
     <Content Include="Assets\berenjeno.png" />
     <Content Include="Assets\brocoli.png" />
+    <Content Include="Assets\ButtonSound.wav" />
     <Content Include="Assets\champ.png" />
     <Content Include="Assets\default-profile-image.png" />
+    <Content Include="Assets\Exit.wav" />
     <Content Include="Assets\FotoMenuPrincipal.png" />
     <Content Include="Assets\fresa.png" />
+    <Content Include="Assets\Jugar.mp3" />
     <Content Include="Assets\mapa1.png" />
     <Content Include="Assets\mapa2.png" />
     <Content Include="Assets\mapa3.png" />
@@ -173,6 +176,7 @@
     <Content Include="Assets\Music.png" />
     <Content Include="Assets\NoMusic.png" />
     <Content Include="Assets\NoSonidos.png" />
+    <Content Include="Assets\Seleccion.wav" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

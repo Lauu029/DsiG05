@@ -140,6 +140,7 @@
                     <Button Content="SALIR"
                         HorizontalAlignment="Stretch"
                         Name="Salida"
+                        Click="Salida_Click"
                         Style="{StaticResource QuitStyle}"/>
 
                 </StackPanel>

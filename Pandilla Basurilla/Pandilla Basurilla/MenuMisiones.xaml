@@ -70,13 +70,15 @@
                     Background="#FFE9F29B"
                     Style="{StaticResource MisionsStyle}"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center"/>
+                    HorizontalAlignment="Center"
+                    Click="MisionButton_Click"/>
             <Button x:Name="MisionD2"
                     Content="Misión diaria 2"
                     Style="{StaticResource MisionsStyle}"
                     Background="#FFE9F29B"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center"/>
+                    HorizontalAlignment="Center"
+                    Click="MisionButton_Click"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Stretch"
                     HorizontalAlignment="Center"
@@ -86,36 +88,42 @@
                     Content="Misión 1"
                     Style="{StaticResource MisionsStyle}"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Left"/>
+                    HorizontalAlignment="Left"
+                    Click="MisionButton_Click"/>
                 <Button x:Name="Mision2"
                     Content="Misión 2"
                     Style="{StaticResource MisionsStyle}"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Left"/>
+                    HorizontalAlignment="Left"
+                    Click="MisionButton_Click"/>
             </StackPanel>
             <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Center">
                 <Button x:Name="Mision3"
                     Content="Misión 3"
                     Style="{StaticResource MisionsStyle}"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center"/>
+                    HorizontalAlignment="Center"
+                    Click="MisionButton_Click"/>
                 <Button x:Name="Mision4"
                     Content="Misión 4"
                     Style="{StaticResource MisionsStyle}"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center"/>
+                    HorizontalAlignment="Center"
+                    Click="MisionButton_Click"/>
             </StackPanel>
             <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Center">
                 <Button x:Name="Mision5"
                     Content="Misión 5"
                     Style="{StaticResource MisionsStyle}"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center"/>
+                    HorizontalAlignment="Center"
+                    Click="MisionButton_Click"/>
                 <Button x:Name="Mision6"
                     Content="Misión 6"
                     Style="{StaticResource MisionsStyle}"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center"/>
+                    HorizontalAlignment="Center"
+                    Click="MisionButton_Click"/>
             </StackPanel>
         </StackPanel>
 
