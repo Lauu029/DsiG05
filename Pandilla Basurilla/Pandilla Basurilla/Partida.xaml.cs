@@ -25,6 +25,7 @@ namespace Pandilla_Basurilla
     public sealed partial class Partida : Page
     {
         public MediaPlayer player;
+        
 
         public Partida()
         {
@@ -44,10 +45,17 @@ namespace Pandilla_Basurilla
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // If e.Parameter is a string, set the TextBlock's text with it.
-            if (e?.Parameter is ImageSource image)
+            if (e?.Parameter is ImageSource [] image)
             {
-                MapaJugador1.Source = image;
-                MapaJugador2.Source = image;
+                MapaJugador1.Source = image[0];
+                MapaJugador2.Source = image[0];
+                ch1.Source = image[4];
+                ch2.Source = image[5];
+                ch3.Source = image[6];
+                gn1.Source = image[1];
+                gn2.Source = image[2];
+                gn3.Source = image[3];
+                
             }
 
             base.OnNavigatedTo(e);

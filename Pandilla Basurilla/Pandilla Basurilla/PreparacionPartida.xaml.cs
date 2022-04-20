@@ -28,6 +28,9 @@ namespace Pandilla_Basurilla
         private ImageSource imgSrc;
         bool g1 = false, g2 = false, g3 = false;
         bool cr1 = false, cr2 = false, cr3 = false;
+        ImageSource[] sources = new ImageSource[7];
+
+        private ImageSource ar1, ar2, ar3, ch1, ch2, ch3;
         public PreparacionPartida()
         {
             this.InitializeComponent();
@@ -65,7 +68,8 @@ namespace Pandilla_Basurilla
 
         private void PlayButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Partida), imgSrc);
+            sources[0] = imgSrc;
+            Frame.Navigate(typeof(Partida), sources);
             PlayButtonSound("Jugar.mp3");
         }
 
@@ -168,16 +172,19 @@ namespace Pandilla_Basurilla
             if (!g1)
             {
                 Gun1.Source = src;
+                sources[1] = src;
                 g1 = true;
             }
             else if (!g2)
             {
                 Gun2.Source = src;
+                sources[2] = src;
                 g2 = true;
             }
             else if (!g3)
             {
                 Gun3.Source = src;
+                sources[3] = src;
                 g3 = true;
 
             }
@@ -232,16 +239,19 @@ namespace Pandilla_Basurilla
             if (!cr1)
             {
                 Ch1.Source = src;
+                sources[4] = src;
                 cr1 = true;
             }
             else if (!cr2)
             {
-               Ch2.Source = src;
+                Ch2.Source = src;
+                sources[5] = src;
                 cr2 = true;
             }
             else if (!cr3)
             {
                 Ch3.Source = src;
+                sources[6] = src;
                 cr3 = true;
 
             }
