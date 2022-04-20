@@ -34,7 +34,7 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
-        
+
         <Viewbox Grid.Column="0" Grid.Row="0">
             <StackPanel VerticalAlignment="Stretch"
                         HorizontalAlignment="Left"
@@ -51,7 +51,7 @@
                            TextAlignment="Center"/>
             </StackPanel>
         </Viewbox>
-        
+
         <Viewbox Grid.Column="0" Grid.Row="1">
             <StackPanel VerticalAlignment="Center"
                         Margin="30,0,30,0" 
@@ -76,7 +76,7 @@
                         Click="Mapas_Click"/>
             </StackPanel>
         </Viewbox>
-        
+
         <Viewbox Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom">
             <StackPanel Orientation="Horizontal" 
                         VerticalAlignment="Bottom" 
@@ -108,7 +108,7 @@
                         Height="25"/>
             </StackPanel>
         </Viewbox>
-        
+
         <Viewbox Grid.Column="1" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Margin="20">
             <StackPanel Grid.Column="1"
                         HorizontalAlignment="Left"
@@ -126,7 +126,7 @@
                            Margin="10"/>
             </StackPanel>
         </Viewbox>
-        
+
         <Viewbox Grid.Column="1" Grid.Row="0">
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Right"
@@ -151,7 +151,7 @@
                            VerticalAlignment="Top"/>
             </StackPanel>
         </Viewbox>
-        
+
         <Viewbox Grid.Column="1" Grid.Row="1">
             <Grid Grid.Column="1" x:Name="MapsScreen"  Margin="120,80,120,200"
                   CornerRadius="5"
@@ -198,114 +198,144 @@
                 </Button>
             </Grid>
         </Viewbox>
-        <Viewbox Grid.Column="1" Grid.Row="1" Margin="15,5,120,150">
-            <Grid Grid.Column="1" x:Name="SkinsScreen"
-                    CornerRadius="5"
-                    BorderBrush="#FFE2EE79"
-                    BorderThickness="6" Grid.Row="1" Visibility="Collapsed">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
 
-                <Button Grid.Row="1" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/pistola1.png"/>
-                </Button>
-                <Button Grid.Row="0" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/pistola2.png"/>
-                </Button>
-                <Button  Grid.Row="1" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/pistola3.png"/>
-                </Button>
-                <Button  Grid.Row="0" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/pistola4.png"/>
-                </Button>
-                <Button  Grid.Row="2" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/pistola5.png"/>
-                </Button>
-                <Button  Grid.Row="2" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/pistola6.png"/>
-                </Button>
-                <Button  Grid.Row="0" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/pistola7.png"/>
-                </Button>
-                <Button  Grid.Row="1" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/pistola8.png"/>
-                </Button>
-                <Button  Grid.Row="2" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/pistola9.png"/>
-                </Button>
-            </Grid>
+        <Viewbox Grid.Column="1" Grid.Row="1" Margin="15,5,120,150">
+            <StackPanel Orientation="Horizontal" Visibility="Collapsed"  x:Name="SkinsScreen">
+                <Grid CornerRadius="5"
+                    BorderBrush="#FFE2EE79"
+                    BorderThickness="6" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Row="1" Grid.Column="1"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion1_Click">
+                        <Image x:Name="I1" Source="Assets/pistola1.png"/>
+                    </Button>
+                    <Button Grid.Row="0" Grid.Column="1"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion2_Click">
+                        <Image x:Name="I2" Source="Assets/pistola2.png"/>
+                    </Button>
+                    <Button  Grid.Row="1" Grid.Column="0"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion3_Click">
+                        <Image x:Name="I3" Source="Assets/pistola3.png"/>
+                    </Button>
+                    <Button  Grid.Row="0" Grid.Column="0"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion4_Click">
+                        <Image x:Name="I4" Source="Assets/pistola4.png"/>
+                    </Button>
+                    <Button  Grid.Row="2" Grid.Column="0"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion5_Click">
+                        <Image x:Name="I5" Source="Assets/pistola5.png"/>
+                    </Button>
+                    <Button  Grid.Row="2" Grid.Column="1"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion6_Click">
+                        <Image x:Name="I6" Source="Assets/pistola6.png"/>
+                    </Button>
+                    <Button  Grid.Row="0" Grid.Column="2"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion7_Click">
+                        <Image x:Name="I7" Source="Assets/pistola7.png"/>
+                    </Button>
+                    <Button  Grid.Row="1" Grid.Column="2"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion8_Click">
+                        <Image x:Name="I8" Source="Assets/pistola8.png"/>
+                    </Button>
+                    <Button  Grid.Row="2" Grid.Column="2"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion9_Click">
+                        <Image x:Name="I9" Source="Assets/pistola9.png"/>
+                    </Button>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Margin="200,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" x:Name="Gun1" Source="Assets/pistola1.png" Margin="50" Width="500"/>
+
+                    <Image Grid.Row="1" x:Name="Gun2" Source="Assets/pistola2.png" Margin="50" Width="500"/>
+
+                    <Image Grid.Row="2"  x:Name="Gun3"  Source="Assets/pistola3.png" Margin="50" Width="500"/>
+
+                </Grid>
+            </StackPanel>
         </Viewbox>
         <Viewbox Grid.Column="1" Grid.Row="1" Margin="120,80,120,200">
-            <Grid  x:Name="PersonajesScreen" 
-                   CornerRadius="5"
+            <StackPanel Orientation="Horizontal" Visibility="Collapsed"  x:Name="PersonajesScreen">
+                <Grid CornerRadius="5"
                    BorderBrush="#FFE2EE79"
-                   BorderThickness="6" Grid.Row="1" 
-                   Visibility="Collapsed">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+                   BorderThickness="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                <Button Grid.Row="1" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/ajo.png"/>
-                </Button>
-                <Button Grid.Row="0" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/awacato.png"/>
-                </Button>
-                <Button  Grid.Row="1" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/berenjeno.png"/>
-                </Button>
-                <Button  Grid.Row="0" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/pimiento.png"/>
-                </Button>
-                <Button  Grid.Row="2" Grid.Column="0"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/sandia.png"/>
-                </Button>
-                <Button  Grid.Row="2" Grid.Column="1"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/platano.png"/>
-                </Button>
-                <Button  Grid.Row="0" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/fresa.png"/>
-                </Button>
-                <Button  Grid.Row="1" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/brocoli.png"/>
-                </Button>
-                <Button  Grid.Row="2" Grid.Column="2"
-                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccion_Click">
-                    <Image Source="Assets/champ.png"/>
-                </Button>
-            </Grid>
+                    <Button Grid.Row="1" Grid.Column="1"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccionc1_Click">
+                        <Image x:Name="c1" Source="Assets/ajo.png"/>
+                    </Button>
+                    <Button Grid.Row="0" Grid.Column="1"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccionc2_Click">
+                        <Image x:Name="c2" Source="Assets/awacato.png"/>
+                    </Button>
+                    <Button  Grid.Row="1" Grid.Column="0"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccionc3_Click">
+                        <Image x:Name="c3" Source="Assets/berenjeno.png"/>
+                    </Button>
+                    <Button  Grid.Row="0" Grid.Column="0"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccionc4_Click">
+                        <Image x:Name="c4" Source="Assets/pimiento.png"/>
+                    </Button>
+                    <Button  Grid.Row="2" Grid.Column="0"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccionc5_Click">
+                        <Image x:Name="c5" Source="Assets/sandia.png"/>
+                    </Button>
+                    <Button  Grid.Row="2" Grid.Column="1"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccionc6_Click">
+                        <Image x:Name="c6" Source="Assets/platano.png"/>
+                    </Button>
+                    <Button  Grid.Row="0" Grid.Column="2"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccionc7_Click">
+                        <Image x:Name="c7" Source="Assets/fresa.png"/>
+                    </Button>
+                    <Button  Grid.Row="1" Grid.Column="2"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccionc8_Click">
+                        <Image x:Name="c8" Source="Assets/brocoli.png"/>
+                    </Button>
+                    <Button  Grid.Row="2" Grid.Column="2"
+                    Width="300" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Seleccionc9_Click">
+                        <Image x:Name="c9" Source="Assets/champ.png"/>
+                    </Button>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Margin="200,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" x:Name="Ch1" Source="Assets/ajo.png" Margin="50" Width="500"/>
+
+                    <Image Grid.Row="1" x:Name="Ch2" Source="Assets/awacato.png" Margin="50" Width="500"/>
+
+                    <Image Grid.Row="2"  x:Name="Ch3"  Source="Assets/berenjeno.png" Margin="50" Width="500"/>
+
+                </Grid>
+            </StackPanel>
         </Viewbox>
     </Grid>
 </Page>

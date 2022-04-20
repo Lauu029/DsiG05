@@ -26,7 +26,8 @@ namespace Pandilla_Basurilla
     {
         public MediaPlayer player;
         private ImageSource imgSrc;
-
+        bool g1 = false, g2 = false, g3 = false;
+        bool cr1 = false, cr2 = false, cr3 = false;
         public PreparacionPartida()
         {
             this.InitializeComponent();
@@ -64,7 +65,7 @@ namespace Pandilla_Basurilla
 
         private void PlayButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Partida),imgSrc);
+            Frame.Navigate(typeof(Partida), imgSrc);
             PlayButtonSound("Jugar.mp3");
         }
 
@@ -86,7 +87,7 @@ namespace Pandilla_Basurilla
 
         private void Mapas_Click(object sender, RoutedEventArgs e)
         {
-            
+
             MapsScreen.Visibility = Visibility.Visible;
             PersonajesScreen.Visibility = Visibility.Collapsed;
             SkinsScreen.Visibility = Visibility.Collapsed;
@@ -113,10 +114,137 @@ namespace Pandilla_Basurilla
             imgSrc = Mapa4.Source;
         }
 
+        private void Seleccion1_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImage(I1.Source);
+        }
+        private void Seleccion2_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImage(I2.Source);
+        }
+        private void Seleccion3_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImage(I3.Source);
+        }
+        private void Seleccion4_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImage(I4.Source);
+        }
+        private void Seleccion5_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImage(I5.Source);
+        }
+        private void Seleccion6_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImage(I6.Source);
+        }
+        private void Seleccion7_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImage(I7.Source);
+        }
+        private void Seleccion8_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImage(I8.Source);
+        }
+        private void Seleccion9_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImage(I9.Source);
+        }
         private void Seleccion_Click(object sender, RoutedEventArgs e)
         {
             PlayButtonSound("Seleccion.wav");
         }
+        private void changeImage(ImageSource src)
+        {
+            if (!g1)
+            {
+                Gun1.Source = src;
+                g1 = true;
+            }
+            else if (!g2)
+            {
+                Gun2.Source = src;
+                g2 = true;
+            }
+            else if (!g3)
+            {
+                Gun3.Source = src;
+                g3 = true;
 
+            }
+        }
+        private void Seleccionc1_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImageChar(c1.Source);
+        }
+        private void Seleccionc2_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImageChar(c2.Source);
+        }
+        private void Seleccionc3_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImageChar(c3.Source);
+        }
+        private void Seleccionc4_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImageChar(c4.Source);
+        }
+        private void Seleccionc5_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImageChar(c5.Source);
+        }
+        private void Seleccionc6_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImageChar(c6.Source);
+        }
+        private void Seleccionc7_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImageChar(c7.Source);
+        }
+        private void Seleccionc8_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImageChar(c8.Source);
+        }
+        private void Seleccionc9_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Seleccion.wav");
+            changeImageChar(c9.Source);
+        }
+        private void changeImageChar(ImageSource src)
+        {
+            if (!cr1)
+            {
+                Ch1.Source = src;
+                cr1 = true;
+            }
+            else if (!cr2)
+            {
+               Ch2.Source = src;
+                cr2 = true;
+            }
+            else if (!cr3)
+            {
+                Ch3.Source = src;
+                cr3 = true;
+
+            }
+        }
     }
 }
