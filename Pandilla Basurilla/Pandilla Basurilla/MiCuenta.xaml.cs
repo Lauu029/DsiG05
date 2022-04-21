@@ -63,7 +63,7 @@ namespace Pandilla_Basurilla
 
         private void Aceptar_Click(object sender, RoutedEventArgs e)
         {
-            var dlg = new Windows.UI.Popups.MessageDialog($"Hello {UserName}!");
+            var dlg = new Windows.UI.Popups.MessageDialog($"Hola {UserName}! Ha iniciado sesión correctamente.");
             dlg.ShowAsync();
         }
     }

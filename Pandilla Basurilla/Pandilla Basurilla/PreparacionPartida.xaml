@@ -74,6 +74,18 @@
                         HorizontalAlignment="Center"
                         Style="{StaticResource ButtonsStyle}"
                         Click="Mapas_Click"/>
+                <Button x:Name="BackButton"
+                        Style="{StaticResource ExitStyle}"
+                        Margin="10, 60"
+                        Content="Rendirse"
+                        IsEnabled="{x:Bind Mode=OneWay, Path=Frame.CanGoBack}" 
+                        ToolTipService.ToolTip="Back"
+                        Click="BackButton_Click"
+                        Width="350"  
+                        FontSize="30"
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Bottom" 
+                        Height="100"/>
             </StackPanel>
         </Viewbox>
 
@@ -81,7 +93,7 @@
             <StackPanel Orientation="Horizontal" 
                         VerticalAlignment="Bottom" 
                         HorizontalAlignment="Stretch">
-                <Button x:Name="BackButton"
+                <!--<Button x:Name="BackButton"
                         Style="{StaticResource ExitStyle}"
                         Margin="10"
                         Content="Rendirse"
@@ -91,7 +103,7 @@
                         Width="100"  
                         HorizontalAlignment="Left" 
                         VerticalAlignment="Bottom" 
-                        Height="25"/>
+                        Height="25"/>-->
                 <Button Grid.Column="1" 
                         Grid.Row="1"
                         x:Name="PlayButton"
