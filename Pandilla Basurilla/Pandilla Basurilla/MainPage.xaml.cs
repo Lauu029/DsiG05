@@ -74,6 +74,7 @@ namespace Pandilla_Basurilla
         private void Salida_Click(object sender, RoutedEventArgs e)
         {
             PlayButtonSound("Exit.wav");
+           Application.Current.Exit();
         }
     }
 }

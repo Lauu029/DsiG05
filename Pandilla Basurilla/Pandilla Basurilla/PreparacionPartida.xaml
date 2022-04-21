@@ -110,7 +110,7 @@
                         Style="{StaticResource ButtonsStyle}"
                         Margin="100,10,10,10"
                         Content="Jugar"
-                        FontSize="10"
+                        FontSize="9"
                         IsEnabled="{x:Bind Mode=OneWay, Path=Frame.CanGoBack}" 
                         ToolTipService.ToolTip="Back"
                         Click="PlayButton_Click"
