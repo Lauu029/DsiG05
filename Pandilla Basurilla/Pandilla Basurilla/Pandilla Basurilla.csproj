@@ -165,6 +165,7 @@
     <Content Include="Assets\Exit.wav" />
     <Content Include="Assets\FotoMenuPrincipal.png" />
     <Content Include="Assets\fresa.png" />
+    <Content Include="Assets\Grafica.jpg" />
     <Content Include="Assets\Jugar.mp3" />
     <Content Include="Assets\mapa1.png" />
     <Content Include="Assets\mapa2.png" />

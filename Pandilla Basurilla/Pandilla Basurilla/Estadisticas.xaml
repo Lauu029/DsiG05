@@ -19,19 +19,33 @@
             <Setter Property="CornerRadius" Value="3"/>
         </Style>
     </Page.Resources>
-    
+
     <Grid Background="#FFAEDD94">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
         <Viewbox HorizontalAlignment="Left"
                  VerticalAlignment="Bottom"
                  Height="150">
-            
+
             <Button x:Name="BackButton"
                     Style="{StaticResource BackButtonStyle }" 
                     Content="Volver"
                     Click="BackButton_Click" />
-            
-        </Viewbox>
-    
 
+        </Viewbox>
+
+        <Viewbox Height="700"
+                 Width="800"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Grid.Column="1">
+
+            <Image Source="Assets/Grafica.jpg" />
+        </Viewbox>
     </Grid>
 </Page>
