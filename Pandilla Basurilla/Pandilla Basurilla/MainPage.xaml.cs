@@ -62,6 +62,7 @@ namespace Pandilla_Basurilla
 
         private void TiendaButton_Click(object sender, RoutedEventArgs e)
         {
+            Frame.Navigate(typeof(Tienda));
             PlayButtonSound("ButtonSound.wav");
         }
 
