@@ -183,10 +183,10 @@
             </StackPanel>
         </Viewbox>
         <Viewbox Grid.Column="0" Grid.Row="2">
-            <Canvas>
+            
                 <Image x:Name="MapaJugador1"
-                    Source="Assets/mapa4.png"/>
-            </Canvas>
+                    Source="Assets/mapa4.png" CanDrag="True"/>
+            
 
         </Viewbox>
         <Viewbox Grid.Column="0" Grid.Row="3">
