@@ -49,6 +49,7 @@ namespace Pandilla_Basurilla
         private void MisionButton_Click(object sender, RoutedEventArgs e)
         {
             PlayButtonSound("ButtonSound.wav");
+            Frame.Navigate(typeof(Partida));
         }
 
         // App.xaml.cs
