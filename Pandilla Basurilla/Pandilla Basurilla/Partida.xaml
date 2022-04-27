@@ -34,9 +34,11 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="6*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="6*"/>
@@ -121,7 +123,7 @@
                    Foreground="Black"/>
             </StackPanel>
         </Viewbox>
-        <Viewbox  Grid.Row="2" Grid.Column="2" >
+        <Viewbox  Grid.Row="4" Grid.Column="2" >
             <StackPanel Background="#ffb4b0" Width="652">
                 <Button Grid.Row="2"
                 Grid.Column="2"
@@ -136,7 +138,7 @@
                 Click="ExitButton_Click"/>
             </StackPanel>
         </Viewbox>
-        <Viewbox  Grid.Row="2">
+        <Viewbox  Grid.Row="43">
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Stretch"
                         VerticalAlignment="Stretch"
@@ -171,29 +173,33 @@
             </StackPanel>
         </Viewbox>
         <Viewbox Grid.Column="0" Grid.Row="1">
-            <StackPanel Orientation="Vertical">
 
-                <StackPanel HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal">
-                    <Image x:Name="ch1" Source="Assets/ajo.png" Height="142" CanDrag="True"/>
-                    <Image x:Name="ch2" Source="Assets/awacato.png" Height="142" CanDrag="True"/>
-                    <Image x:Name="ch3" Source="Assets/champ.png" Height="142" CanDrag="True"/>
-                    
-                </StackPanel>
-                <StackPanel AllowDrop="True">
-                <Image x:Name="MapaJugador1"
-                    Source="Assets/mapa4.png"
-                       Stretch="Fill"/>
-                </StackPanel>
-                <StackPanel HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Bottom" Orientation="Horizontal">
-                    <Image x:Name="gn1" Source="Assets/pistola1.png" Width="182" CanDrag="True"/>
-                    <Image x:Name="gn2" Source="Assets/pistola2.png" Width="182" CanDrag="True"/>
-                    <Image x:Name="gn3" Source="Assets/pistola3.png" Width="182" CanDrag="True"/>
-                </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal">
+                <Image x:Name="ch1" Source="Assets/ajo.png" Height="142" CanDrag="True"/>
+                <Image x:Name="ch2" Source="Assets/awacato.png" Height="142" CanDrag="True"/>
+                <Image x:Name="ch3" Source="Assets/champ.png" Height="142" CanDrag="True"/>
 
             </StackPanel>
         </Viewbox>
+        <Viewbox Grid.Column="0" Grid.Row="2">
+            <Canvas>
+                <Image x:Name="MapaJugador1"
+                    Source="Assets/mapa4.png"/>
+            </Canvas>
 
-        <Viewbox Grid.Column="2" Grid.Row="1">
+        </Viewbox>
+        <Viewbox Grid.Column="0" Grid.Row="3">
+
+
+            <StackPanel HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal">
+                <Image x:Name="gn1" Source="Assets/pistola1.png" Width="182" CanDrag="True"/>
+                <Image x:Name="gn2" Source="Assets/pistola2.png" Width="182" CanDrag="True"/>
+                <Image x:Name="gn3" Source="Assets/pistola3.png" Width="182" CanDrag="True"/>
+
+            </StackPanel>
+        </Viewbox>
+        <Viewbox Grid.Column="2" Grid.Row="2">
             <StackPanel>
                 <Image  x:Name="MapaJugador2"
                         Source="Assets/mapa4.png"
