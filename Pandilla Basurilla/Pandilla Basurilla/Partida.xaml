@@ -174,9 +174,10 @@
             <StackPanel Orientation="Vertical">
 
                 <StackPanel HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal">
-                    <Image x:Name="ch1" Source="Assets/ajo.png" Height="142" />
-                    <Image x:Name="ch2" Source="Assets/awacato.png" Height="142" />
-                    <Image x:Name="ch3" Source="Assets/champ.png" Height="142" />
+                    <Image x:Name="ch1" Source="Assets/ajo.png" Height="142" CanDrag="True"/>
+                    <Image x:Name="ch2" Source="Assets/awacato.png" Height="142" CanDrag="True"/>
+                    <Image x:Name="ch3" Source="Assets/champ.png" Height="142" CanDrag="True"/>
+                    
                 </StackPanel>
                 <Image x:Name="MapaJugador1"
                     Source="Assets/mapa4.png"

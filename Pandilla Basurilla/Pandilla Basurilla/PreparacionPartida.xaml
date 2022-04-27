@@ -93,17 +93,7 @@
             <StackPanel Orientation="Horizontal" 
                         VerticalAlignment="Bottom" 
                         HorizontalAlignment="Stretch">
-                <!--<Button x:Name="BackButton"
-                        Style="{StaticResource ExitStyle}"
-                        Margin="10"
-                        Content="Rendirse"
-                        IsEnabled="{x:Bind Mode=OneWay, Path=Frame.CanGoBack}" 
-                        ToolTipService.ToolTip="Back"
-                        Click="BackButton_Click"
-                        Width="100"  
-                        HorizontalAlignment="Left" 
-                        VerticalAlignment="Bottom" 
-                        Height="25"/>-->
+            
                 <Button Grid.Column="1" 
                         Grid.Row="1"
                         x:Name="PlayButton"
@@ -111,12 +101,14 @@
                         Margin="100,10,10,10"
                         Content="Jugar"
                         FontSize="9"
-                        IsEnabled="{x:Bind Mode=OneWay, Path=Frame.CanGoBack}" 
+                        Visibility="Visible"
+                        
                         ToolTipService.ToolTip="Back"
                         Click="PlayButton_Click"
                         Width="100"
                         HorizontalAlignment="Right"
-                        VerticalAlignment="Bottom" 
+                        VerticalAlignment="Bottom"
+                        IsEnabled="False"
                         Height="25"/>
             </StackPanel>
         </Viewbox>

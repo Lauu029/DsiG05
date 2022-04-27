@@ -25,12 +25,14 @@ namespace Pandilla_Basurilla
     public sealed partial class PreparacionPartida : Page
     {
         public MediaPlayer player;
-        private ImageSource imgSrc;
+        public ImageSource imgSrc;
         bool g1 = false, g2 = false, g3 = false;
         bool cr1 = false, cr2 = false, cr3 = false;
         ImageSource[] sources = new ImageSource[7];
-
-        private ImageSource ar1, ar2, ar3, ch1, ch2, ch3;
+        //Controla que el array esté lleno antes de pasar a la partida
+        int fullsource = 0;
+        //controla si se ha elegido mapa
+        bool map = false;
         public PreparacionPartida()
         {
             this.InitializeComponent();
@@ -91,7 +93,7 @@ namespace Pandilla_Basurilla
 
         private void Mapas_Click(object sender, RoutedEventArgs e)
         {
-
+            
             MapsScreen.Visibility = Visibility.Visible;
             PersonajesScreen.Visibility = Visibility.Collapsed;
             SkinsScreen.Visibility = Visibility.Collapsed;
@@ -99,23 +101,35 @@ namespace Pandilla_Basurilla
         }
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
+            
             imgSrc = Mapa1.Source;
+            map = true;
+            if (fullsource >= 6) PlayButton.IsEnabled = true;
             PlayButtonSound("Seleccion.wav");
         }
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
             imgSrc = Mapa2.Source;
+            map = true;
+            if (fullsource >= 6) PlayButton.IsEnabled = true;
             PlayButtonSound("Seleccion.wav");
         }
         private void Button3_Click(object sender, RoutedEventArgs e)
         {
+
             imgSrc = Mapa3.Source;
+            map = true;
+            if ( fullsource >= 6) PlayButton.IsEnabled = true;
             PlayButtonSound("Seleccion.wav");
         }
         private void Button4_Click(object sender, RoutedEventArgs e)
         {
-            PlayButtonSound("Seleccion.wav");
+
+           
             imgSrc = Mapa4.Source;
+            map = true;
+            if (fullsource >= 6) PlayButton.IsEnabled = true;
+            PlayButtonSound("Seleccion.wav");
         }
 
         private void Seleccion1_Click(object sender, RoutedEventArgs e)
@@ -174,20 +188,23 @@ namespace Pandilla_Basurilla
                 Gun1.Source = src;
                 sources[1] = src;
                 g1 = true;
+                fullsource++;
             }
             else if (!g2)
             {
                 Gun2.Source = src;
                 sources[2] = src;
                 g2 = true;
+                fullsource++;
             }
             else if (!g3)
             {
                 Gun3.Source = src;
                 sources[3] = src;
                 g3 = true;
-
+                fullsource++;
             }
+            if (map && fullsource >= 6) PlayButton.IsEnabled = true;
         }
         private void Seleccionc1_Click(object sender, RoutedEventArgs e)
         {
@@ -241,20 +258,23 @@ namespace Pandilla_Basurilla
                 Ch1.Source = src;
                 sources[4] = src;
                 cr1 = true;
+                fullsource++;
             }
             else if (!cr2)
             {
                 Ch2.Source = src;
                 sources[5] = src;
                 cr2 = true;
+                fullsource++;
             }
             else if (!cr3)
             {
                 Ch3.Source = src;
                 sources[6] = src;
                 cr3 = true;
-
+                fullsource++;
             }
+            if (map && fullsource >= 6) PlayButton.IsEnabled = true;
         }
     }
 }

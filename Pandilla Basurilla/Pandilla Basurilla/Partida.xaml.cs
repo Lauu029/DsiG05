@@ -47,6 +47,7 @@ namespace Pandilla_Basurilla
             // If e.Parameter is a string, set the TextBlock's text with it.
             if (e?.Parameter is ImageSource [] image)
             {
+
                 MapaJugador1.Source = image[0];
                 MapaJugador2.Source = image[0];
                 ch1.Source = image[4];
