@@ -33,12 +33,23 @@ namespace Pandilla_Basurilla
         int fullsource = 0;
         //controla si se ha elegido mapa
         bool map = false;
+        //Tipo de partida
+        string tipo;
         public PreparacionPartida()
         {
             this.InitializeComponent();
             player = new MediaPlayer();
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            // If e.Parameter is a string, set the TextBlock's text with it.
+            if (e?.Parameter is string tipoPartida)
+            {
+                tipo = tipoPartida;
+            }
 
+            base.OnNavigatedTo(e);
+        }
         public async void PlayButtonSound(string filename)
         {
             Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");

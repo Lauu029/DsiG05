@@ -43,7 +43,7 @@
                         BorderThickness="5"
                         BorderBrush="#FF0844A4"
                         CornerRadius="3">
-                <TextBlock Text="Player 1"
+                <TextBlock Text="JUGADOR 1"
                            Foreground="Black"
                            FontSize="30"
                            Margin="10"
@@ -76,16 +76,16 @@
                         Click="Mapas_Click"/>
                 <Button x:Name="BackButton"
                         Style="{StaticResource ExitStyle}"
-                        Margin="10, 60"
-                        Content="Rendirse"
+                        Margin="60, 60,60,60"
+                        Content="Volver"
                         IsEnabled="{x:Bind Mode=OneWay, Path=Frame.CanGoBack}" 
                         ToolTipService.ToolTip="Back"
                         Click="BackButton_Click"
-                        Width="350"  
-                        FontSize="30"
+                        Width="100"  
+                        FontSize="20"
                         HorizontalAlignment="Center" 
                         VerticalAlignment="Bottom" 
-                        Height="100"/>
+                        Height="50"/>
             </StackPanel>
         </Viewbox>
 
@@ -102,7 +102,6 @@
                         Content="Jugar"
                         FontSize="9"
                         Visibility="Visible"
-                        
                         ToolTipService.ToolTip="Back"
                         Click="PlayButton_Click"
                         Width="100"
@@ -130,7 +129,8 @@
                            Margin="10"/>
             </StackPanel>
         </Viewbox>
-
+        
+      
         <Viewbox Grid.Column="1" Grid.Row="0">
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Right"
@@ -146,13 +146,16 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Left"
                        Margin="20"/>
-                <TextBlock Grid.Column="1" Grid.Row="0"
-                           Text="PLAYER 2"
+                <StackPanel Orientation="Vertical">
+                <TextBlock Text="JUGADOR 2"
                            Margin="30"
                            Foreground="Black"
                            HorizontalAlignment="Right"
                            FontSize="30"
                            VerticalAlignment="Top"/>
+            <TextBlock Text="{x:Bind tipo}" HorizontalAlignment="Center" FontSize="30"
+                       Foreground="Black"/>
+                </StackPanel>
             </StackPanel>
         </Viewbox>
 

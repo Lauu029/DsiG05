@@ -25,7 +25,7 @@ namespace Pandilla_Basurilla
     public sealed partial class ModosdeJuego : Page
     {
         public MediaPlayer player;
-
+        private string playMode;
         public ModosdeJuego()
         {
             this.InitializeComponent();
@@ -58,9 +58,19 @@ namespace Pandilla_Basurilla
             return false;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonPractica_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(PreparacionPartida));
+            Frame.Navigate(typeof(PreparacionPartida),"Practica");
+            PlayButtonSound("ButtonSound.wav");
+        }
+        private void ButtonOnline_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PreparacionPartida),"Online");
+            PlayButtonSound("ButtonSound.wav");
+        }
+        private void ButtonAmigos_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PreparacionPartida),"Amigos");
             PlayButtonSound("ButtonSound.wav");
         }
     }

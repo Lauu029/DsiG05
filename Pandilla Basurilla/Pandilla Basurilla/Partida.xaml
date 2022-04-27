@@ -179,13 +179,15 @@
                     <Image x:Name="ch3" Source="Assets/champ.png" Height="142" CanDrag="True"/>
                     
                 </StackPanel>
+                <StackPanel AllowDrop="True">
                 <Image x:Name="MapaJugador1"
                     Source="Assets/mapa4.png"
                        Stretch="Fill"/>
+                </StackPanel>
                 <StackPanel HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Bottom" Orientation="Horizontal">
-                    <Image x:Name="gn1" Source="Assets/pistola1.png" Width="182"/>
-                    <Image x:Name="gn2" Source="Assets/pistola2.png" Width="182"/>
-                    <Image x:Name="gn3" Source="Assets/pistola3.png" Width="182"/>
+                    <Image x:Name="gn1" Source="Assets/pistola1.png" Width="182" CanDrag="True"/>
+                    <Image x:Name="gn2" Source="Assets/pistola2.png" Width="182" CanDrag="True"/>
+                    <Image x:Name="gn3" Source="Assets/pistola3.png" Width="182" CanDrag="True"/>
                 </StackPanel>
 
             </StackPanel>

@@ -80,19 +80,19 @@
                         Margin="10"
                         Style="{StaticResource GamemodeStyle}"
                         HorizontalAlignment="Stretch" CharacterSpacing="-1"
-                    Click="Button_Click"/>
+                    Click="ButtonPractica_Click"/>
 
                 <Button Content="ONLINE"
                         Margin="40"
                         Style="{StaticResource GamemodeStyle}"
                         HorizontalAlignment="Stretch"
-                    Click="Button_Click"/>
+                    Click="ButtonOnline_Click"/>
 
                 <Button Content="JUGAR CON AMIGOS"
                         Margin="10"
                         Style="{StaticResource GamemodeStyle}"
                         HorizontalAlignment="Stretch"
-                    Click="Button_Click"/>
+                    Click="ButtonAmigos_Click"/>
             </StackPanel>
         </Viewbox>
     </Grid>
