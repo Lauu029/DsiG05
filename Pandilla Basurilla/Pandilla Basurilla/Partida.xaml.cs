@@ -46,24 +46,24 @@ namespace Pandilla_Basurilla
         {
             e.AcceptedOperation = DataPackageOperation.Copy;
         }
-        private async void Image_DropAsync(object sender, DragEventArgs e)
-        {
-            var id = await e.DataView.GetTextAsync();
-            var number = int.Parse(id);
-            Point PD = e.GetPosition(MiCanvas);
-            MiDron.Source = ListaDrones[number].Img.Source;
-            MiImagen.Source = ListaDrones[number].Img.Source;
-            Point pos = e.GetPosition(mi_mapa);
-            MiDron.Visibility = Visibility.Visible;
-            Texto.Text = ListaDrones[number].Explicacion;
-            Sel = int.Parse(id);
+        //private async void Image_DropAsync(object sender, DragEventArgs e)
+        //{
+        //    var id = await e.DataView.GetTextAsync();
+        //    var number = int.Parse(id);
+        //    Point PD = e.GetPosition(MiCanvas);
+        //    MiDron.Source = ListaDrones[number].Img.Source;
+        //    MiImagen.Source = ListaDrones[number].Img.Source;
+        //    Point pos = e.GetPosition(mi_mapa);
+        //    MiDron.Visibility = Visibility.Visible;
+        //    Texto.Text = ListaDrones[number].Explicacion;
+        //    Sel = int.Parse(id);
 
-            ListaDrones[Sel].X = (int)pos.X;
-            ListaDrones[Sel].Y = (int)pos.Y;
-            ListaDrones[Sel].Transformacion.TranslateX = pos.X;
-            ListaDrones[Sel].Transformacion.TranslateY = pos.Y;
-            MiDronCC.RenderTransform = ListaDrones[Sel].Transformacion;
-        }
+        //    ListaDrones[Sel].X = (int)pos.X;
+        //    ListaDrones[Sel].Y = (int)pos.Y;
+        //    ListaDrones[Sel].Transformacion.TranslateX = pos.X;
+        //    ListaDrones[Sel].Transformacion.TranslateY = pos.Y;
+        //    MiDronCC.RenderTransform = ListaDrones[Sel].Transformacion;
+        //}
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // If e.Parameter is a string, set the TextBlock's text with it.
