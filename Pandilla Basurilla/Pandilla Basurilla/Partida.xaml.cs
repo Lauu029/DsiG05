@@ -93,5 +93,18 @@ namespace Pandilla_Basurilla
         {
             PlayButtonSound("ButtonSound.wav");
         }
+
+        private async void MapaJugador1_Drop(object sender, DragEventArgs e)
+        {
+            var Oname = await e.DataView.GetTextAsync();
+            Object O = FindName(Oname.ToString());
+            chStack.Children.Remove(O as Image);
+            mapa1.Children.Remove(O as Image);
+            mapa1.Children.Add(O as Image);
+
+            Point pos = e.GetPosition(mapa1);
+            mapa1.Children[mapa1.Children.Count() - 1].SetValue(Canvas.TopProperty, pos.Y + 10.0);
+            mapa1.Children[mapa1.Children.Count() - 1].SetValue(Canvas.LeftProperty, pos.X + 10.0);
+        }
     }
 }

@@ -175,7 +175,7 @@
         <Viewbox Grid.Column="0" Grid.Row="1">
 
 
-            <StackPanel HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal">
+            <StackPanel x:Name="chStack" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal">
                 <Image x:Name="ch1" Source="Assets/ajo.png" Height="142" CanDrag="True"/>
                 <Image x:Name="ch2" Source="Assets/awacato.png" Height="142" CanDrag="True"/>
                 <Image x:Name="ch3" Source="Assets/champ.png" Height="142" CanDrag="True"/>
@@ -183,10 +183,10 @@
             </StackPanel>
         </Viewbox>
         <Viewbox Grid.Column="0" Grid.Row="2">
-            
+            <Canvas x:Name="mapa1" AllowDrop="True" Drop="MapaJugador1_Drop" CanDrag="True">
                 <Image x:Name="MapaJugador1"
-                    Source="Assets/mapa4.png" CanDrag="True"/>
-            
+                    Source="Assets/mapa4.png"/>
+            </Canvas>
 
         </Viewbox>
         <Viewbox Grid.Column="0" Grid.Row="3">
