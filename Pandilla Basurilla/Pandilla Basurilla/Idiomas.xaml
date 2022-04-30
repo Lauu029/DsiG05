@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Pandilla_Basurilla.Ajustes"
+    x:Class="Pandilla_Basurilla.Idiomas"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Pandilla_Basurilla"
@@ -26,6 +26,7 @@
             <Setter Property="Margin" Value="10, 15"/>
             <Setter Property="CornerRadius" Value="5"/>
         </Style>
+        
         <Style x:Key="BackButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#FFB0130F" />
             <Setter Property="Foreground" Value="White" />
@@ -37,20 +38,19 @@
         </Style>
     </Page.Resources>
 
-
     <Grid Background="#FFAEDD94">
 
         <Viewbox>
-        <Grid Width="1165" Height="772">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="3*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="2*"/>
-            </Grid.RowDefinitions>
+            <Grid Width="1165" Height="772">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
 
                 <Button x:Uid="volver"
                 x:Name="BackButton"
@@ -60,88 +60,39 @@
                 VerticalAlignment="Bottom"
                 Click="BackButton_Click"
                         Grid.Row="1"/>
-            
+
                 <StackPanel Orientation="Vertical"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Bottom"
                         Grid.Row="0"
                         Grid.Column="1">
 
-                    <TextBlock x:Uid="ajustes" 
-                       Text="AJUSTES"
+                    <TextBlock x:Uid="idiomas" 
+                       Text="IDIOMAS"
                        HorizontalAlignment="Center"
-                       FontSize="65"
+                       FontSize="50"
                        Margin="30"
                        Style="{StaticResource TittleStyle}"/>
 
-                    <Button x:Uid="miCuenta"
-                    Content="MI CUENTA"
+                    <Button x:Uid="español"
+                    Content="ESPAÑOL"
                     HorizontalAlignment="Stretch"
-                    Name="MiCuentaButton"
-                    Click="MiCuentaButton_Click"
+                    Name="EspañolButton"
+                    Click="IdiomasButton_Click"
                     Style="{StaticResource ButtonsStyle}"/>
 
-                    <Button x:Uid="estadisticas"
-                    Content="ESTADISTICAS"
-                    Name="EstadisticasButton"
+                    <Button x:Uid="ingles"
+                    Content="INGLÉS"
+                    Name="InglesButton"
                     HorizontalAlignment="Stretch"
-                    Click="EstadisticasButton_Click"
+                    Click="IdiomasButton_Click"
                     Style="{StaticResource ButtonsStyle}"/>
 
-                    <Button x:Uid="idioma"
-                    Content="IDIOMA"
+                    <Button Content=""
                     HorizontalAlignment="Stretch"
-                    Name="IdiomaButton"
-                    Click="IdiomaButton_Click"
                     Style="{StaticResource ButtonsStyle}"/>
-            </StackPanel>
-
-            <StackPanel Grid.Row="1"
-                        Grid.Column="1">
-
-                <Canvas>
-                    <Image Source="Assets/NoMusic.png" Height="60" Width="45"/>
-                    <Image Source="Assets/NoSonidos.png" Height="110" Canvas.Top="65" Width="45"/>
-                </Canvas>
-
-                <Canvas HorizontalAlignment="Right">
-                    <Image Source="Assets/Music.png"
-                           Height="45" 
-                           Width="40" 
-                           Canvas.Left="-40"
-                           Canvas.Top="6"/>
-
-                    <Image Source="Assets/Sonidos.png" 
-                           Height="45" 
-                           Width="40" 
-                           Canvas.Left="-40" 
-                           Canvas.Top="98"/>
-
-                </Canvas>
-
-                <Slider Margin="50,10"
-                        Background="#4c9d23"/>
-
-                    <TextBlock x:Uid="musica"
-                           Text="Música"
-                           FontSize="30"
-                           HorizontalAlignment="Center"
-                           FontWeight="Medium"
-                           Foreground="Black"/>
-
-                <Slider Margin="50,10"
-                        Background="#4c9d23"/>
-
-                    <TextBlock x:Uid="sonidos"
-                           Text="Sonidos"
-                           FontSize="30"
-                           HorizontalAlignment="Center"
-                           FontWeight="Medium"
-                           Foreground="Black"/>
-
-            </StackPanel>
-
-        </Grid>
+                </StackPanel>
+            </Grid>
         </Viewbox>
     </Grid>
 </Page>

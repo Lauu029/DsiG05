@@ -96,13 +96,15 @@
                         HorizontalAlignment="Stretch"
                         VerticalAlignment="Stretch">
 
-                    <TextBlock HorizontalAlignment="Center"
+                    <TextBlock x:Uid="pandilla"
+                           HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            Text="Pandilla"
                            FontSize="90"
                            Style="{StaticResource TittleStyle}"/>
 
-                    <TextBlock HorizontalAlignment="Center"
+                    <TextBlock x:Uid="basurilla"
+                           HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            Text="Basurilla"
                            FontSize="110"
@@ -119,25 +121,29 @@
                         Grid.Row="2"
                         >
 
-                    <Button Content="JUGAR"
+                    <Button x:Uid="jugar"
+                        Content="JUGAR"
                         HorizontalAlignment="Stretch"
                         Name="JugarButton"
                         Click="JugarButton_Click"
                         Style="{StaticResource ButtonsStyle}"/>
 
-                    <Button Content="MISIONES"
+                    <Button x:Uid="misiones"
+                        Content="MISIONES"
                         Name="Misiones"
                         HorizontalAlignment="Stretch"
                         Click="Misiones_Click"
                         Style="{StaticResource ButtonsStyle}"/>
 
-                    <Button Content="TIENDA"
+                    <Button x:Uid="tienda"
+                        Content="TIENDA"
                         HorizontalAlignment="Stretch"
                         Name="ModosdeJuego"
                         Click="TiendaButton_Click"
                         Style="{StaticResource ButtonsStyle}"/>
 
-                    <Button Content="SALIR"
+                    <Button x:Uid="salir"
+                        Content="SALIR"
                         HorizontalAlignment="Stretch"
                         Name="Salida"
                         Click="Salida_Click"

@@ -30,7 +30,8 @@
         <Viewbox HorizontalAlignment="Center"
                  VerticalAlignment="Top"
                  Height="200">
-            <TextBlock Text="Cuenta"
+            <TextBlock x:Uid="cuenta"
+                       Text="Cuenta"
                        HorizontalAlignment="Center"
                        FontSize="75"
                        Style="{StaticResource TittleStyle}"/>
@@ -40,7 +41,8 @@
                  VerticalAlignment="Bottom"
                  Height="140">
 
-            <Button x:Name="BackButton"
+            <Button x:Uid="volver" 
+                x:Name="BackButton"
                 Style="{StaticResource BackButtonStyle }" 
                 Content="Volver"
                 VerticalAlignment="Bottom"
@@ -57,7 +59,8 @@
                     VerticalAlignment="Center" 
                     Orientation="Horizontal">
 
-                <TextBlock Margin="10" 
+                <TextBlock x:Uid="introduceNombre"
+                       Margin="10" 
                        VerticalAlignment="Center"
                        Text="Introduzca nombre: "
                        FontSize="25"/>
@@ -70,7 +73,8 @@
                      VerticalAlignment="Center" 
                      Text="{x:Bind UserName, Mode=TwoWay}"/>
 
-                <Button Margin="10" 
+                <Button x:Uid="aceptar"
+                    Margin="10" 
                     FontSize="25"
                     VerticalAlignment="Center"
                     Click="Aceptar_Click">Aceptar</Button>

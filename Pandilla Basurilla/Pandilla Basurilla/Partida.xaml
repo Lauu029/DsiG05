@@ -56,7 +56,8 @@
                                 Width="350"
                                 Height="50"
                                 HorizontalAlignment="Left">
-                        <TextBlock Text="VIDA JUGADOR 1"
+                        <TextBlock x:Uid="vidaJugador1"
+                                   Text="VIDA JUGADOR 1"
                                    FontSize="30"
                                    FontWeight="SemiBold"
                                    CharacterSpacing="100"
@@ -92,7 +93,8 @@
                    HorizontalAlignment="Right"
                             Margin="0,0,20,0">
 
-                    <TextBlock Grid.Column="2" 
+                    <TextBlock x:Uid="vidaJugador2" 
+                           Grid.Column="2" 
                            Text="VIDA JUGADOR 2"
                            FontSize="30"
                            FontWeight="SemiBold"
@@ -106,7 +108,8 @@
         <Viewbox Grid.Row="0" Grid.Column="1">
             <StackPanel  Background="White" Width="121" Height="120">
 
-                <TextBlock Grid.Column="1"
+                <TextBlock x:Uid="ronda" 
+                   Grid.Column="1"
                    Text="RONDA"
                    Margin="0,20,0,0"
                    FontSize="25"
@@ -125,7 +128,8 @@
         </Viewbox>
         <Viewbox  Grid.Row="4" Grid.Column="2" >
             <StackPanel Background="#ffb4b0" Width="652">
-                <Button Grid.Row="2"
+                <Button x:Uid="salirBoton"
+                Grid.Row="2"
                 Grid.Column="2"
                 x:Name="ExitButton"
                 Style="{StaticResource ExitStyle}"
@@ -143,28 +147,33 @@
                         HorizontalAlignment="Stretch"
                         VerticalAlignment="Stretch"
                         Background="White" >
-                <Button Style="{StaticResource Button1}"
+                <Button x:Uid="ataque"
+                        Style="{StaticResource Button1}"
                         Content="ATAQUE"
                         Height="75"
                         Margin="20"
                         Click="Button_Click"/>
-                <Button Style="{StaticResource Button1}"
+                <Button x:Uid="defensa"
+                        Style="{StaticResource Button1}"
                         Content="DEFENSA"
                         Width="150"
                         Height="75"
                         Click="Button_Click"/>
-                <Button Style="{StaticResource Button2}"
+                <Button x:Uid="mejora1"
+                        Style="{StaticResource Button2}"
                         Content="MEJORA 1"
                         Width="100"
                         Height="75"
                         Margin="10"
                         Click="Button_Click"/>
-                <Button Style="{StaticResource Button2}"
+                <Button x:Uid="mejora2"
+                        Style="{StaticResource Button2}"
                         Content="MEJORA 2"
                         Width="100"
                         Height="75"
                         Click="Button_Click"/>
-                <Button Style="{StaticResource Button2}"
+                <Button x:Uid="mejora3"
+                        Style="{StaticResource Button2}"
                         Content="MEJORA 3"
                         Width="100"
                         Height="75"

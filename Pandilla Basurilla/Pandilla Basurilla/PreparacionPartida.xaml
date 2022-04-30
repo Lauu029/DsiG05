@@ -43,7 +43,8 @@
                         BorderThickness="5"
                         BorderBrush="#FF0844A4"
                         CornerRadius="3">
-                <TextBlock Text="JUGADOR 1"
+                <TextBlock x:Uid="jugador1"
+                           Text="JUGADOR 1"
                            Foreground="Black"
                            FontSize="30"
                            Margin="10"
@@ -56,25 +57,29 @@
             <StackPanel VerticalAlignment="Center"
                         Margin="30,0,30,0" 
                         Height="555">
-                <Button x:Name="Personajes"
+                <Button x:Uid="personajes"
+                        x:Name="Personajes"
                         Content="Personajes"
                         FontSize="30"
                         HorizontalAlignment="Center"
                         Style="{StaticResource ButtonsStyle}"
                         Click="Personajes_Click"/>
-                <Button x:Name="Armas"
+                <Button x:Uid="armas"
+                        x:Name="Armas"
                         Content="Armas"
                         FontSize="30"
                         HorizontalAlignment="Center"
                         Style="{StaticResource ButtonsStyle}"
                         Click="Skins_Click"/>
-                <Button x:Name="Mapas"
+                <Button x:Uid="mapas"
+                        x:Name="Mapas"
                         Content="Mapas"
                         FontSize="30"
                         HorizontalAlignment="Center"
                         Style="{StaticResource ButtonsStyle}"
                         Click="Mapas_Click"/>
-                <Button x:Name="BackButton"
+                <Button x:Uid="volver"
+                        x:Name="BackButton"
                         Style="{StaticResource ExitStyle}"
                         Margin="60, 60,60,60"
                         Content="Volver"
@@ -93,8 +98,9 @@
             <StackPanel Orientation="Horizontal" 
                         VerticalAlignment="Bottom" 
                         HorizontalAlignment="Stretch">
-            
-                <Button Grid.Column="1" 
+
+                <Button x:Uid="jugarBoton"
+                        Grid.Column="1" 
                         Grid.Row="1"
                         x:Name="PlayButton"
                         Style="{StaticResource ButtonsStyle}"
@@ -147,7 +153,8 @@
                        HorizontalAlignment="Left"
                        Margin="20"/>
                 <StackPanel Orientation="Vertical">
-                <TextBlock Text="JUGADOR 2"
+                    <TextBlock x:Uid="jugador2"
+                           Text="JUGADOR 2"
                            Margin="30"
                            Foreground="Black"
                            HorizontalAlignment="Right"

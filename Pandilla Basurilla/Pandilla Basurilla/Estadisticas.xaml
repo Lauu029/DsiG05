@@ -32,7 +32,8 @@
                  VerticalAlignment="Bottom"
                  Height="150">
 
-            <Button x:Name="BackButton"
+            <Button x:Uid="volver"
+                    x:Name="BackButton"
                     Style="{StaticResource BackButtonStyle }" 
                     Content="Volver"
                     Click="BackButton_Click" />

@@ -40,7 +40,8 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Viewbox Grid.Row="1">
-        <Button  x:Name="BackButton"
+            <Button x:Uid="volver" 
+                x:Name="BackButton"
                 Style="{StaticResource ExitStyle}"
                 Content="Volver"
                 VerticalAlignment="Bottom"
@@ -52,7 +53,8 @@
                 Click="BackButton_Click"/>
         </Viewbox>
         <Viewbox Grid.Column="1">
-        <TextBlock Grid.Column="1"
+            <TextBlock x:Uid="modosDeJuego"
+                Grid.Column="1"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
                 Text="Modos de juego"
@@ -76,7 +78,8 @@
                 Margin="20"
                 Grid.Row="1">
 
-                <Button Content="PRACTICA"
+                <Button x:Uid="practica"
+                        Content="PRACTICA"
                         Margin="10"
                         Style="{StaticResource GamemodeStyle}"
                         HorizontalAlignment="Stretch" CharacterSpacing="-1"
@@ -88,7 +91,8 @@
                         HorizontalAlignment="Stretch"
                     Click="ButtonOnline_Click"/>
 
-                <Button Content="JUGAR CON AMIGOS"
+                <Button x:Uid="jugarConAmigos"
+                        Content="JUGAR CON AMIGOS"
                         Margin="10"
                         Style="{StaticResource GamemodeStyle}"
                         HorizontalAlignment="Stretch"
