@@ -49,7 +49,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="5*"/>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
 
                 <Button x:Uid="volver"
@@ -88,8 +88,18 @@
                     Click="IdiomasButton_Click"
                     Style="{StaticResource ButtonsStyle}"/>
 
-                    <Button Content=""
+                    <Button x:Uid="frances"
+                    Content="Francés"
+                    Name="FrancesButton"
                     HorizontalAlignment="Stretch"
+                    Click="IdiomasButton_Click"
+                    Style="{StaticResource ButtonsStyle}"/>
+
+                    <Button x:Uid="aleman"
+                    Content="Alemán"
+                    Name="AlemanButton"
+                    HorizontalAlignment="Stretch"
+                    Click="IdiomasButton_Click"
                     Style="{StaticResource ButtonsStyle}"/>
                 </StackPanel>
             </Grid>

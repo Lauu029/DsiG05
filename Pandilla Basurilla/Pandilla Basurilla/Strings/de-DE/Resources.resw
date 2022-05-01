@@ -118,141 +118,147 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="aceptar.Content" xml:space="preserve">
-    <value>Aceptar</value>
+    <value>Annehmen</value>
   </data>
   <data name="ajustes.Text" xml:space="preserve">
-    <value>AJUSTES</value>
+    <value>EINSTELLUNGEN</value>
+  </data>
+  <data name="aleman.Content" xml:space="preserve">
+    <value>Deutsch</value>
   </data>
   <data name="armas.Content" xml:space="preserve">
-    <value>Armas</value>
+    <value>Waffen</value>
   </data>
   <data name="ataque.Content" xml:space="preserve">
-    <value>ATAQUE</value>
+    <value>ANGRIFF</value>
   </data>
   <data name="basurilla.Text" xml:space="preserve">
-    <value>Basurilla</value>
+    <value>Müll</value>
   </data>
   <data name="cuenta.Text" xml:space="preserve">
-    <value>Cuenta</value>
+    <value>Konto</value>
   </data>
   <data name="defensa.Content" xml:space="preserve">
-    <value>DEFENSA</value>
+    <value>VERTEIDIGUNG</value>
   </data>
   <data name="español.Content" xml:space="preserve">
-    <value>Español</value>
+    <value>Spanisch</value>
   </data>
   <data name="estadisticas.Content" xml:space="preserve">
-    <value>ESTADISTICAS</value>
+    <value>STATISTIKEN</value>
+  </data>
+  <data name="frances.Content" xml:space="preserve">
+    <value>Französisch</value>
   </data>
   <data name="idioma.Content" xml:space="preserve">
-    <value>IDIOMA</value>
+    <value>SPRACHE</value>
   </data>
   <data name="idiomas.Text" xml:space="preserve">
-    <value>IDIOMAS</value>
+    <value>SPRACHEN</value>
   </data>
   <data name="ingles.Content" xml:space="preserve">
-    <value>Inglés</value>
+    <value>Englisch</value>
   </data>
   <data name="introduceNombre.Text" xml:space="preserve">
-    <value>Introduzca nombre</value>
+    <value>Name eingeben</value>
   </data>
   <data name="jugador1.Text" xml:space="preserve">
-    <value>JUGADOR 1</value>
+    <value>SPIELER 1</value>
   </data>
   <data name="jugador2.Text" xml:space="preserve">
-    <value>JUGADOR 2</value>
+    <value>SPIELER 2</value>
   </data>
   <data name="jugar.Content" xml:space="preserve">
-    <value>JUGAR</value>
+    <value>SPIELEN</value>
   </data>
   <data name="jugarBoton.Content" xml:space="preserve">
-    <value>Jugar</value>
+    <value>Spielen</value>
   </data>
   <data name="jugarConAmigos.Content" xml:space="preserve">
-    <value>JUGAR CON AMIGOS</value>
+    <value>MIT FREUNDEN SPIELEN</value>
   </data>
   <data name="mapas.Content" xml:space="preserve">
-    <value>Mapas</value>
+    <value>Karten</value>
   </data>
   <data name="mejora1.Content" xml:space="preserve">
-    <value>MEJORA 1</value>
+    <value>VERBESSERUNG 1</value>
   </data>
   <data name="mejora2.Content" xml:space="preserve">
-    <value>MEJORA 2</value>
+    <value>VERBESSERUNG 2</value>
   </data>
   <data name="mejora3.Content" xml:space="preserve">
-    <value>MEJORA 3</value>
+    <value>VERBESSERUNG 3</value>
   </data>
   <data name="miCuenta.Content" xml:space="preserve">
-    <value>MI CUENTA</value>
+    <value>MEIN KONTO</value>
   </data>
   <data name="mision1.Content" xml:space="preserve">
-    <value>Misión 1</value>
+    <value>Mission 1</value>
   </data>
   <data name="mision2.Content" xml:space="preserve">
-    <value>Misión 2</value>
+    <value>Mission 2</value>
   </data>
   <data name="mision3.Content" xml:space="preserve">
-    <value>Misión 3</value>
+    <value>Mission 3</value>
   </data>
   <data name="mision4.Content" xml:space="preserve">
-    <value>Misión 4</value>
+    <value>Mission 4</value>
   </data>
   <data name="mision5.Content" xml:space="preserve">
-    <value>Misión 5</value>
+    <value>Mission 5</value>
   </data>
   <data name="mision6.Content" xml:space="preserve">
-    <value>Misión 6</value>
+    <value>Mission 6</value>
   </data>
   <data name="misionDiaria.Content" xml:space="preserve">
-    <value>Misión diaria</value>
+    <value>Tägliche mission</value>
   </data>
   <data name="misiones.Content" xml:space="preserve">
-    <value>MISIONES</value>
+    <value>MISSIONEN</value>
   </data>
   <data name="misionesDiarias.Text" xml:space="preserve">
-    <value>Misiones diarias</value>
+    <value>Tägliche missionen</value>
   </data>
   <data name="misionesText.Text" xml:space="preserve">
-    <value>Misiones</value>
+    <value>Missionen</value>
   </data>
   <data name="modosDeJuego.Text" xml:space="preserve">
-    <value>Modos de Juego</value>
+    <value>Spielmodi</value>
   </data>
   <data name="musica.Text" xml:space="preserve">
-    <value>Música</value>
+    <value>Musik</value>
   </data>
   <data name="pandilla.Text" xml:space="preserve">
-    <value>Pandilla</value>
+    <value>Clique</value>
   </data>
   <data name="personajes.Content" xml:space="preserve">
-    <value>Personajes</value>
+    <value>Figuren</value>
   </data>
   <data name="practica.Content" xml:space="preserve">
-    <value>PRÁCTICA</value>
+    <value>ANWENDUNG</value>
   </data>
   <data name="ronda.Text" xml:space="preserve">
-    <value>RONDA</value>
+    <value>RUNDE</value>
   </data>
   <data name="salir.Content" xml:space="preserve">
-    <value>SALIR</value>
+    <value>HERAUSGEHEN</value>
   </data>
   <data name="salirBoton.Content" xml:space="preserve">
-    <value>Salir</value>
+    <value>Herausgehen</value>
   </data>
   <data name="sonidos.Text" xml:space="preserve">
-    <value>Sonidos</value>
+    <value>Schallen</value>
   </data>
   <data name="tienda.Content" xml:space="preserve">
-    <value>TIENDA</value>
+    <value>GESCHÄFT</value>
   </data>
   <data name="vidaJugador1.Text" xml:space="preserve">
-    <value>VIDA JUGADOR 1</value>
+    <value>LEVEN SPIELER 1</value>
   </data>
   <data name="vidaJugador2.Text" xml:space="preserve">
-    <value>VIDA JUGADOR 2</value>
+    <value>LEVEN SPIELER 2</value>
   </data>
   <data name="volver.Content" xml:space="preserve">
-    <value>Volver</value>
+    <value>Zurückkehren</value>
   </data>
 </root>

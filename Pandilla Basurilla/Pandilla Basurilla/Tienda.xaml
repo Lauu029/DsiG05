@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
+
     <Page.Resources>
         <Style x:Key="BackButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#FFB0130F" />
@@ -18,18 +18,95 @@
             <Setter Property="Margin" Value="30"/>
             <Setter Property="CornerRadius" Value="3"/>
         </Style>
+        <Style x:Key="ButtonsStyle" TargetType="Button">
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="Height" Value="250"/>
+            <Setter Property="Background" Value="#FFCBE8BA"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontStretch" Value="Condensed"/>
+            <Setter Property="Margin" Value="30, 30"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
     </Page.Resources>
 
     <Grid Background="#FFAEDD94">
-        <Viewbox HorizontalAlignment="Left"
-                 VerticalAlignment="Bottom"
-                 Height="150">
+        <Viewbox>
+            <Grid Width="1165" Height="772">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
 
-            <Button x:Name="BackButton"
+
+
+                <Button x:Uid="volver" 
+                    x:Name="BackButton"
+                    Grid.Row="1"
                     Style="{StaticResource BackButtonStyle }" 
                     Content="Volver"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Bottom"
                     Click="BackButton_Click" />
 
+                <Button HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Name="TiendaButton1"
+                    Click="BuyButton_Click"
+                    Style="{StaticResource ButtonsStyle }">
+                    <Canvas>
+                        <Image Source="Assets/Coins.png"
+                           Height="150"
+                           HorizontalAlignment="Center" Canvas.Left="-150" Canvas.Top="-50" VerticalAlignment="Center"/>
+                    </Canvas>
+                </Button>
+
+                <Button Grid.Row="1"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Name="TiendaButton2"
+                    Click="BuyButton_Click"
+                    Style="{StaticResource ButtonsStyle }">
+                    <Canvas>
+                        <Image Source="Assets/Coins.png"
+                           Height="150"
+                           HorizontalAlignment="Center" Canvas.Left="-150" Canvas.Top="-50" VerticalAlignment="Center"/>
+                    </Canvas>
+                </Button>
+
+
+                <Button Grid.Column="1"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Bottom"
+                    Name="TiendaButton4"
+                    Click="BuyButton_Click"
+                    Style="{StaticResource ButtonsStyle }">
+                    <Canvas>
+                        <Image Source="Assets/Cash.png"
+                           Height="192" Canvas.Left="-140" Canvas.Top="-75" Width="281" RenderTransformOrigin="0.609,0.942"/>
+                    </Canvas>
+                </Button>
+
+                <Button Grid.Column="1"
+                    Grid.Row="1"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Name="TiendaButton3"
+                    Click="BuyButton_Click"
+                    Style="{StaticResource ButtonsStyle }">
+                    <Canvas>
+                        <Image Source="Assets/Cash.png"
+                           Height="192" Canvas.Left="-140" Canvas.Top="-75" Width="281" RenderTransformOrigin="0.609,0.942"/>
+                    </Canvas>
+                </Button>
+
+
+            </Grid>
         </Viewbox>
 
 

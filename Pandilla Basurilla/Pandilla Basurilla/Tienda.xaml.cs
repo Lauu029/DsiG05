@@ -59,5 +59,10 @@ namespace Pandilla_Basurilla
             TryGoBack();
             PlayButtonSound("Exit.wav");
         }
+
+        private void BuyButton_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound("Coin.wav");
+        }
     }
 }

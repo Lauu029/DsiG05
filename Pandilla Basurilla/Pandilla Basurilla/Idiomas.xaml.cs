@@ -50,15 +50,21 @@ namespace Pandilla_Basurilla
         private void IdiomasButton_Click(object sender, RoutedEventArgs e)
         {
             var hbIdioma = sender as Button;
-            string lang = "es-PY";
+            string lang = "es-ES";
 
             switch (hbIdioma.Name)
             {
                 case "EspañolButton":
-                    lang = "es-PY";
+                    lang = "es-ES";
                     break;
                 case "InglesButton":
                     lang = "en-US";
+                    break;
+                case "FrancesButton":
+                    lang = "fr-FR";
+                    break;
+                case "AlemanButton":
+                    lang = "de-DE";
                     break;
             }
 

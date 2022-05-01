@@ -163,7 +163,10 @@
     <Content Include="Assets\berenjeno.png" />
     <Content Include="Assets\brocoli.png" />
     <Content Include="Assets\ButtonSound.wav" />
+    <Content Include="Assets\cash.png" />
     <Content Include="Assets\champ.png" />
+    <Content Include="Assets\Coin.wav" />
+    <Content Include="Assets\coins.png" />
     <Content Include="Assets\default-profile-image.png" />
     <Content Include="Assets\Exit.wav" />
     <Content Include="Assets\FotoMenuPrincipal.png" />
@@ -255,7 +258,13 @@
     <PRIResource Include="Strings\en-US\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
-    <PRIResource Include="Strings\es-PY\Resources.resw" />
+    <PRIResource Include="Strings\es-ES\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\de-DE\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\fr-FR\Resources.resw" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
