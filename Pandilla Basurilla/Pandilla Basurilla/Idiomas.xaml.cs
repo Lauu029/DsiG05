@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Globalization;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -68,7 +69,7 @@ namespace Pandilla_Basurilla
                     break;
             }
 
-            Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = lang;
+            ApplicationLanguages.PrimaryLanguageOverride = lang;
 
             Frame.Navigate(this.GetType());
         }
