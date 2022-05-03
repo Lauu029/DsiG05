@@ -139,9 +139,11 @@ namespace Pandilla_Basurilla
             if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.Space)
             {
                 string name = O.Parent.GetType().Name;
+                
                 if (name == "StackPanel")
                 {
                     chStack.Children.Remove(O);
+                    
                     mapa1.Children.Add(O);
                 }
 

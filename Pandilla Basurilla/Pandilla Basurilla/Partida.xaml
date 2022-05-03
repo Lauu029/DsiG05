@@ -198,20 +198,15 @@
 
             </StackPanel>
         </Viewbox>
-        <Viewbox Grid.Column="0" Grid.Row="2">
 
+        <Image Grid.Row="2" x:Name="MapaJugador1"
+                    Source="Assets/mapa4.png"/>
+        <Canvas Grid.Row="2" x:Name="mapa1" AllowDrop="True"  Drop="mapa1_Drop" DragOver="mapa1_DragOver"/>
 
-            <Grid   >
-                <Canvas x:Name="mapa1" AllowDrop="True"  Drop="mapa1_Drop" CanDrag="True" DragOver="mapa1_DragOver"/>
-                <!--<Image x:Name="MapaJugador1"
-                    Source="Assets/mapa4.png"/>-->
-            </Grid>
-
-        </Viewbox>
         <Viewbox Grid.Column="0" Grid.Row="3">
 
 
-            <StackPanel HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal">
+            <StackPanel x:Name="gnPanel" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal">
                 <ContentControl x:Name="gun1" CanDrag="True" DragStarting="O1_DragStarting" KeyDown="Per1_KeyDown"
                             UseSystemFocusVisuals="True" TabFocusNavigation="Local" IsFocusEngagementEnabled="False" IsTabStop="True">
                     <StackPanel  Orientation="Vertical" Margin="10" >
