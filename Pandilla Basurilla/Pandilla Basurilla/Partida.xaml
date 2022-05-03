@@ -185,39 +185,55 @@
 
 
             <StackPanel x:Name="chStack" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal">
-                <ContentControl x:Name="Per1" CanDrag="True" DragStarting="Per1_DragStarting" KeyDown="Per1_KeyDown" UseSystemFocusVisuals="True" TabFocusNavigation="Local" IsFocusEngagementEnabled="False" IsTabStop="True">
+                <ContentControl x:Name="Per1" CanDrag="True" DragStarting="O1_DragStarting" KeyDown="Per1_KeyDown" UseSystemFocusVisuals="True" TabFocusNavigation="Local" IsFocusEngagementEnabled="False" IsTabStop="True">
                     <Image x:Name="ch1" Source="Assets/ajo.png" Height="142" CanDrag="True"/>
                 </ContentControl>
-                <ContentControl x:Name="Per2" CanDrag="True" DragStarting="Per1_DragStarting" KeyDown="Per1_KeyDown" UseSystemFocusVisuals="True" TabFocusNavigation="Local" IsFocusEngagementEnabled="False" IsTabStop="True">
+                <ContentControl x:Name="Per2" CanDrag="True" DragStarting="O1_DragStarting" KeyDown="Per1_KeyDown" UseSystemFocusVisuals="True" TabFocusNavigation="Local" IsFocusEngagementEnabled="False" IsTabStop="True">
                     <Image x:Name="ch2" Source="Assets/awacato.png" Height="142" CanDrag="True"/>
                 </ContentControl>
-                <ContentControl x:Name="Per3" CanDrag="True" DragStarting="Per1_DragStarting" KeyDown="Per1_KeyDown" UseSystemFocusVisuals="True" TabFocusNavigation="Local" IsFocusEngagementEnabled="False" IsTabStop="True">
+                <ContentControl x:Name="Per3" CanDrag="True" DragStarting="O1_DragStarting" KeyDown="Per1_KeyDown" UseSystemFocusVisuals="True" TabFocusNavigation="Local" IsFocusEngagementEnabled="False" IsTabStop="True" >
                     <Image x:Name="ch3" Source="Assets/champ.png" Height="142" CanDrag="True"/>
                 </ContentControl>
-                
+
 
             </StackPanel>
         </Viewbox>
         <Viewbox Grid.Column="0" Grid.Row="2">
 
-           
-            <Grid   >
-                <Canvas x:Name="mapa1" AllowDrop="True" Drop="mapa1_Drop" CanDrag="True" DragOver="mapa1_DragOver">
 
-                </Canvas>
-                <Image x:Name="MapaJugador1"
-                    Source="Assets/mapa4.png"
-                       />
+            <Grid   >
+                <Canvas x:Name="mapa1" AllowDrop="True"  Drop="mapa1_Drop" CanDrag="True" DragOver="mapa1_DragOver"/>
+                <!--<Image x:Name="MapaJugador1"
+                    Source="Assets/mapa4.png"/>-->
             </Grid>
-        
+
         </Viewbox>
         <Viewbox Grid.Column="0" Grid.Row="3">
 
 
             <StackPanel HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal">
-                <Image x:Name="gn1" Source="Assets/pistola1.png" Width="182" CanDrag="True"/>
-                <Image x:Name="gn2" Source="Assets/pistola2.png" Width="182" CanDrag="True"/>
-                <Image x:Name="gn3" Source="Assets/pistola3.png" Width="182" CanDrag="True"/>
+                <ContentControl x:Name="gun1" CanDrag="True" DragStarting="O1_DragStarting" KeyDown="Per1_KeyDown"
+                            UseSystemFocusVisuals="True" TabFocusNavigation="Local" IsFocusEngagementEnabled="False" IsTabStop="True">
+                    <StackPanel  Orientation="Vertical" Margin="10" >
+
+                        <Image x:Name="gn1" Source="Assets/pistola1.png" Width="182" CanDrag="True"/>
+
+                    </StackPanel>
+                </ContentControl>
+                <ContentControl x:Name="gun2" CanDrag="True" DragStarting="O1_DragStarting" KeyDown="Per1_KeyDown"
+                            UseSystemFocusVisuals="True" TabFocusNavigation="Local" IsFocusEngagementEnabled="False" IsTabStop="True">
+                    <StackPanel  Orientation="Vertical" Margin="10" >
+                        <Image x:Name="gn2" Source="Assets/pistola2.png" Width="182" CanDrag="True"/>
+
+                    </StackPanel>
+                </ContentControl>
+                <ContentControl x:Name="gun3" CanDrag="True" DragStarting="O1_DragStarting" KeyDown="Per1_KeyDown"
+                            UseSystemFocusVisuals="True" TabFocusNavigation="Local" IsFocusEngagementEnabled="False" IsTabStop="True">
+                    <StackPanel  Orientation="Vertical" Margin="10" >
+                        <Image x:Name="gn3" Source="Assets/pistola3.png" Width="182" CanDrag="True"/>
+
+                    </StackPanel>
+                </ContentControl>
 
             </StackPanel>
         </Viewbox>

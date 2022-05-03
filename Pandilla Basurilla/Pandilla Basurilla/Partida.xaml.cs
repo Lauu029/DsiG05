@@ -90,7 +90,7 @@ namespace Pandilla_Basurilla
             {
 
                 
-                MapaJugador1.Source = image[0];
+                //MapaJugador1.Source = image[0];
                 MapaJugador2.Source = image[0];
                 ch1.Source = image[4];
                 ch2.Source = image[5];
@@ -116,9 +116,9 @@ namespace Pandilla_Basurilla
         }
 
 
-        
 
-        private void Per1_DragStarting(UIElement sender, DragStartingEventArgs args)
+
+        private void O1_DragStarting(UIElement sender, DragStartingEventArgs args)
         {
             ContentControl Item = sender as ContentControl;
             string id = Item.Name;
@@ -221,6 +221,11 @@ namespace Pandilla_Basurilla
             Point pos = e.GetPosition(mapa1);
             O.SetValue(Canvas.TopProperty, pos.Y + 10.0);
             O.SetValue(Canvas.LeftProperty, pos.X + 10.0);
+        }
+
+        private void mapa1_DragStarting(UIElement sender, DragStartingEventArgs args)
+        {
+
         }
 
         void FeedBack() { }
