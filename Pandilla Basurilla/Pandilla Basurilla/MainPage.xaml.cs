@@ -26,14 +26,23 @@ namespace Pandilla_Basurilla
     public sealed partial class MainPage : Page
     {
         public MediaPlayer player;
+        public MediaPlayer music;
 
         public MainPage()
         {
             this.InitializeComponent();
             player = new MediaPlayer();
-
-            PlayButtonSound("She Will Try - Orchestrated.WAV");
+            music = new MediaPlayer();
+            PlayMusic("I Think I Like You - Orchestrated.WAV");
         }
+
+        public static MainPage current;
+
+        public void volumeChanged()
+        {
+            
+        }
+
 
         public async void PlayButtonSound(string filename)
         {
@@ -42,6 +51,16 @@ namespace Pandilla_Basurilla
             player.AutoPlay = false;
             player.Source = MediaSource.CreateFromStorageFile(file);
             player.Play();
+        }
+
+        public async void PlayMusic(string filename)
+        {
+            Windows.Storage.StorageFolder folder = await Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync(filename);
+            music.AutoPlay = true;
+            music.Source = MediaSource.CreateFromStorageFile(file);
+            music.IsLoopingEnabled = true;
+            music.Play();
         }
 
         private void Misiones_Click(object sender, RoutedEventArgs e)

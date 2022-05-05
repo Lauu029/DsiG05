@@ -120,7 +120,8 @@
                 </Canvas>
 
                 <Slider Margin="50,10"
-                        Background="#4c9d23"/>
+                        Background="#4c9d23"
+                        Value ="100"/>
 
                     <TextBlock x:Uid="musica"
                            Text="Música"
@@ -130,7 +131,8 @@
                            Foreground="Black"/>
 
                 <Slider Margin="50,10"
-                        Background="#4c9d23"/>
+                        Background="#4c9d23"
+                        Value="100"/>
 
                     <TextBlock x:Uid="sonidos"
                            Text="Sonidos"

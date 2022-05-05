@@ -28,6 +28,7 @@ namespace Pandilla_Basurilla
     public sealed partial class Partida : Page
     {
         public MediaPlayer player;
+        public MediaPlayer music;
 
         private readonly object myLock = new object();
         private List<Gamepad> myGamepads = new List<Gamepad>();
@@ -40,8 +41,9 @@ namespace Pandilla_Basurilla
         {
             this.InitializeComponent();
             player = new MediaPlayer();
-
-
+            music = new MediaPlayer();
+            //PlayMusic("I Think I Like You - Orchestrated.WAV");
+            
             Gamepad.GamepadAdded += (object sender, Gamepad e) =>
             {
                 {
@@ -83,6 +85,16 @@ namespace Pandilla_Basurilla
             player.AutoPlay = false;
             player.Source = MediaSource.CreateFromStorageFile(file);
             player.Play();
+        }
+
+        public async void PlayMusic(string filename)
+        {
+            Windows.Storage.StorageFolder folder = await Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync(filename);
+            music.AutoPlay = true;
+            music.Source = MediaSource.CreateFromStorageFile(file);
+            music.IsLoopingEnabled = true;
+            music.Play();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
