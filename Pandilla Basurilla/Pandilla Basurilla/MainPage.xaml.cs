@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.Media.Playback;
 using Windows.Media.Core;
+using Windows.ApplicationModel;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
 
@@ -30,11 +31,13 @@ namespace Pandilla_Basurilla
         {
             this.InitializeComponent();
             player = new MediaPlayer();
+
+            PlayButtonSound("She Will Try - Orchestrated.WAV");
         }
 
         public async void PlayButtonSound(string filename)
         {
-            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFolder folder = await Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
             Windows.Storage.StorageFile file = await folder.GetFileAsync(filename);
             player.AutoPlay = false;
             player.Source = MediaSource.CreateFromStorageFile(file);

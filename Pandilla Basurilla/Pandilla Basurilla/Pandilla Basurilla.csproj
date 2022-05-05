@@ -157,6 +157,8 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\I Think I Like You - Orchestrated.WAV" />
+    <Content Include="Assets\She Will Try - Orchestrated.WAV" />
     <Content Include="Assets\Ajustes.png" />
     <Content Include="Assets\ajo.png" />
     <Content Include="Assets\awacato.png" />

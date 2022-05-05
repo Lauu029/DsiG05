@@ -16,6 +16,7 @@ using Windows.Media.Playback;
 using Windows.Media.Core;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Gaming.Input;
+using Windows.ApplicationModel;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -39,6 +40,7 @@ namespace Pandilla_Basurilla
         {
             this.InitializeComponent();
             player = new MediaPlayer();
+
 
             Gamepad.GamepadAdded += (object sender, Gamepad e) =>
             {
@@ -76,7 +78,7 @@ namespace Pandilla_Basurilla
 
         public async void PlayButtonSound(string filename)
         {
-            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFolder folder = await Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
             Windows.Storage.StorageFile file = await folder.GetFileAsync(filename);
             player.AutoPlay = false;
             player.Source = MediaSource.CreateFromStorageFile(file);
